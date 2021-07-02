@@ -7,25 +7,40 @@ from sklearn.model_selection import train_test_split
 from imutils import paths
 import pandas as pd
 
+# set numpy to out put deciamals in stead of scientific notation
 np.set_printoptions(suppress=True)
 
+'''
+    This funciton calculates the accuracy of the train model using 
+    a confussion matrix as input
+'''
 def accuracy(confusionMatrix):
     diagonal = confusionMatrix.trace()
     elements = confusionMatrix.sum()
     return diagonal/elements
 
 
-#image_paths = list(paths.list_images('image_data/cropped_image'))
-#print(image_paths)
+# set two empty list to input the numpy arrarys from image data to create a set to put through the Classifier
 celeb_data = []
 celeb_labels = []
+
+
+# set the name of the target image
+target_name = "Brad_Pit"
+
+# This uses paths from imutils to produce a list of the path of each image in a folder
 imagePaths = list(paths.list_images('image_data/cropped_image'))
-#print(imagePaths)
+
+'''
+    This for loop opens each image in the list of paths above using openCV and saves the numpy array in a single array
+    This also extracts the lables from the image path and converts it to an int for the target and non-target
+
+'''
 for (i, imagepath) in enumerate(imagePaths):
     # print(i)
     label = imagepath.split(os.path.sep)[-2]
 
-    if label == "Brad_Pit":
+    if label == target_name:
         label = 1
     else:
         label = 0
@@ -39,22 +54,25 @@ for (i, imagepath) in enumerate(imagePaths):
     celeb_labels.append(label)
     celeb_data.append(image)
 
+#These two lines converts the list of arrays into numpy arrays to go through the classifier
 np_celeb_data = np.asarray(celeb_data)
 np_celeb_labels = np.asarray(celeb_labels)
 
-#print(celeb_labels)
-print(np_celeb_data.shape)
 
-
+#Build a train and test split from the given data to put through the classifier
 x_train, x_test, y_train, y_test = train_test_split(np_celeb_data,np_celeb_labels,test_size=.2,random_state=1)
 #print(x_train.shape)
 #print(y_train.shape)
-clf = MLPClassifier(solver='lbfgs',activation='relu', alpha = 1e-5, hidden_layer_sizes=(128,128))
 
+#create an MLPClassifier to put imgage data through and fit it
+clf = MLPClassifier(solver='lbfgs',activation='relu', alpha = 1e-5, hidden_layer_sizes=(128,128))
 clf.fit(x_train,y_train)
 
-
+#produce a pandas DataFrame from a predict_proba prediction and output a DataFrame with probaility the test images
+#fit the target label
 pd_prediction = pd.DataFrame(clf.predict_proba(x_test), columns=clf.classes_)
+
+# Adds a third colmn to the DataFrame of the target labels to check the probability
 pd_prediction["Labels"] = y_test
 print(pd_prediction.round(decimals=5))
 

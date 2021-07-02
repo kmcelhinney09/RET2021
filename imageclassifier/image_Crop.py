@@ -38,8 +38,8 @@ print("[INFO] loading HOG + Linear SVM face detector...")
 detector = dlib.get_frontal_face_detector()
 # load the input image from disk, resize it, and convert it from
 # BGR to RGB channel ordering (which is what dlib expects)
-imagePaths = list(paths.list_images(args["image"]))
 
+imagePaths = list(paths.list_images(args['image']))
 for (i,imagePath) in enumerate(imagePaths):
 	#print(imagePath)
 	file = imagePath.split(os.path.sep)[-1]

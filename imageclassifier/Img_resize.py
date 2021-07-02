@@ -1,8 +1,4 @@
-import argparse
-import imutils
 from imutils import paths
-import time
-import dlib
 import cv2
 import os
 croppedPaths = list(paths.list_images('image_data/cropped_image'))

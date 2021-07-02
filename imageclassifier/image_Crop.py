@@ -44,6 +44,7 @@ for (i,imagePath) in enumerate(imagePaths):
 	#print(imagePath)
 	file = imagePath.split(os.path.sep)[-1]
 	name = imagePath.split(os.path.sep)[-2]
+	name = name + "_Cropped"
 
 	image = cv2.imread(imagePath)
 	image = imutils.resize(image, width=256)
@@ -70,7 +71,6 @@ for (i,imagePath) in enumerate(imagePaths):
 	cropped_path = os.path.join("image_data/cropped_image/",name)
 	cropped_path = os.path.join(cropped_path, file)
 	#print(cropped_path)
-
 	# show the output image
 	#cv2.imshow("Output", image)
 	#cv2.imshow("Cropped", cropped)
@@ -78,12 +78,4 @@ for (i,imagePath) in enumerate(imagePaths):
 	#cv2.waitKey(0)
 
 
-croppedPaths = list(paths.list_images('image_data/cropped_image'))
-#print(croppedPaths)
-for (i,croppedPath) in enumerate(croppedPaths):
-	file2 = imagePath.split(os.path.sep)[-1]
-	name2 = imagePath.split(os.path.sep)[-2]
-	cropped_image = cv2.imread(croppedPath)
-	cropped_image = imutils.resize(cropped_image,width=256,height=256)
-	print(image.shape)
-	cv2.imwrite(os.path.join(os.path.join("image_data/cropped_image/", name2), file2), cropped_image)
+

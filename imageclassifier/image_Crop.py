@@ -31,6 +31,8 @@ ap.add_argument("-i", "--image", type=str, required=True,
 	help="path to input image")
 ap.add_argument("-u", "--upsample", type=int, default=1,
 	help="# of times to upsample")
+ap.add_argument("-d", "--destination", type=str, default=1,
+	help="What is the toplevel folder you want the images to go to.")
 args = vars(ap.parse_args())
 
 # load dlib's HOG + Linear SVM face detector
@@ -40,8 +42,8 @@ detector = dlib.get_frontal_face_detector()
 # BGR to RGB channel ordering (which is what dlib expects)
 
 imagePaths = list(paths.list_images(args['image']))
+print(imagePaths)
 for (i,imagePath) in enumerate(imagePaths):
-	#print(imagePath)
 	file = imagePath.split(os.path.sep)[-1]
 	name = imagePath.split(os.path.sep)[-2]
 	name = name + "_Cropped"
@@ -68,13 +70,13 @@ for (i,imagePath) in enumerate(imagePaths):
 		# draw the bounding box on our image
 		cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 		cropped = image[y:y+h, x:x+w]
-	cropped_path = os.path.join("image_data/cropped_image/",name)
-	cropped_path = os.path.join(cropped_path, file)
+
 	#print(cropped_path)
 	# show the output image
 	#cv2.imshow("Output", image)
 	#cv2.imshow("Cropped", cropped)
-	cv2.imwrite(os.path.join(os.path.join("image_data/cropped_image/",name),file), cropped)
+	print(os.path.join(os.path.join(args["destination"],name),file))
+	cv2.imwrite(os.path.join(os.path.join(args["destination"],name),file), cropped)
 	#cv2.waitKey(0)
 
 

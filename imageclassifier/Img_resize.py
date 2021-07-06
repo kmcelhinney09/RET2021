@@ -1,7 +1,7 @@
 from imutils import paths
 import cv2
 import os
-croppedPaths = list(paths.list_images('image_data/cropped_image'))
+croppedPaths = list(paths.list_images('image_data/cropped_image/Part_2'))
 #print(croppedPaths)
 
 for (i,croppedPath) in enumerate(croppedPaths):
@@ -14,4 +14,4 @@ for (i,croppedPath) in enumerate(croppedPaths):
     dim = (128,128)
     cropped_image = cv2.resize(cropped_image,dim,interpolation=cv2.INTER_AREA)
     print(cropped_image.shape)
-    cv2.imwrite(os.path.join(os.path.join("image_data/cropped_image/", name), file2), cropped_image)
+    cv2.imwrite(os.path.join(os.path.join("image_data/cropped_image/Part_2", name), file2), cropped_image)

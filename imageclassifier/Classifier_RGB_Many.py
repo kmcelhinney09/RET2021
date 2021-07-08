@@ -26,9 +26,9 @@ with open('Classifier_Output.txt', 'w') as f:
 
         # This uses paths from imutils to produce a list of the path of each image in a folder
         Paths = os.listdir("image_data/cropped_image")
-        for each in range(len(Paths)):
+        for each_pair in range(len(Paths)):
 
-            pairing_path = os.path.join("image_data/cropped_image", Paths[i])
+            pairing_path = os.path.join("image_data/cropped_image", Paths[each_pair])
 
             imagePaths = list(paths.list_images(pairing_path))
             # set the name of the target image
@@ -36,10 +36,9 @@ with open('Classifier_Output.txt', 'w') as f:
             target_name = celb_list[0]
 
             '''
-                This for loop opens each image in the list of paths above using openCV and saves the numpy array in a single 
-                array
-                This also extracts the labels from the image path and converts it to an int for the target and non-target
-            
+            This for loop opens each image in the list of paths above using openCV and saves the numpy array in a 
+            single array. This also extracts the labels from the image path and converts it to an int for the target 
+            and non-target 
             '''
 
             for (index, image_path) in enumerate(imagePaths):
@@ -95,4 +94,4 @@ with open('Classifier_Output.txt', 'w') as f:
             pd_prediction["Labels"] = y_test
             print(pd_prediction.round(decimals=5))
             # print the accuracy score of the model to the console
-            print(clf.score(x_test, y_test))
+            print(" The mean accuracy of this model is: {}".format(clf.score(x_test, y_test)))

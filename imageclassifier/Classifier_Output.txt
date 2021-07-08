@@ -1,0 +1,847 @@
+Beyonce------>Solange
+Iteration 1, loss = 0.70816349
+Validation score: 0.500000
+Iteration 2, loss = 0.68640113
+Validation score: 0.642857
+Iteration 3, loss = 0.66578468
+Validation score: 0.714286
+Iteration 4, loss = 0.64836652
+Validation score: 0.642857
+Iteration 5, loss = 0.63327132
+Validation score: 0.714286
+Iteration 6, loss = 0.61922092
+Validation score: 0.714286
+Iteration 7, loss = 0.60591099
+Validation score: 0.714286
+Iteration 8, loss = 0.59304571
+Validation score: 0.714286
+Iteration 9, loss = 0.58127627
+Validation score: 0.785714
+Iteration 10, loss = 0.56945714
+Validation score: 0.785714
+Iteration 11, loss = 0.55746090
+Validation score: 0.785714
+Iteration 12, loss = 0.54548779
+Validation score: 0.785714
+Iteration 13, loss = 0.53389681
+Validation score: 0.785714
+Iteration 14, loss = 0.52248366
+Validation score: 0.714286
+Iteration 15, loss = 0.51130616
+Validation score: 0.785714
+Iteration 16, loss = 0.50024432
+Validation score: 0.714286
+Iteration 17, loss = 0.48965074
+Validation score: 0.714286
+Iteration 18, loss = 0.47967638
+Validation score: 0.714286
+Iteration 19, loss = 0.46988291
+Validation score: 0.785714
+Iteration 20, loss = 0.46042441
+Validation score: 0.714286
+Iteration 21, loss = 0.45138320
+Validation score: 0.785714
+Iteration 22, loss = 0.44239064
+Validation score: 0.714286
+Iteration 23, loss = 0.43360729
+Validation score: 0.714286
+Iteration 24, loss = 0.42501152
+Validation score: 0.785714
+Iteration 25, loss = 0.41642676
+Validation score: 0.785714
+Iteration 26, loss = 0.40805038
+Validation score: 0.785714
+Iteration 27, loss = 0.39999719
+Validation score: 0.857143
+Iteration 28, loss = 0.39219788
+Validation score: 0.785714
+Iteration 29, loss = 0.38464888
+Validation score: 0.857143
+Iteration 30, loss = 0.37729375
+Validation score: 0.785714
+Iteration 31, loss = 0.37021846
+Validation score: 0.857143
+Iteration 32, loss = 0.36326204
+Validation score: 0.785714
+Iteration 33, loss = 0.35640725
+Validation score: 0.785714
+Iteration 34, loss = 0.34965271
+Validation score: 0.785714
+Iteration 35, loss = 0.34300902
+Validation score: 0.857143
+Iteration 36, loss = 0.33652206
+Validation score: 0.785714
+Iteration 37, loss = 0.33010627
+Validation score: 0.857143
+Iteration 38, loss = 0.32388410
+Validation score: 0.785714
+Iteration 39, loss = 0.31771628
+Validation score: 0.857143
+Iteration 40, loss = 0.31174473
+Validation score: 0.785714
+Iteration 41, loss = 0.30584279
+Validation score: 0.857143
+Iteration 42, loss = 0.30011187
+Validation score: 0.785714
+Iteration 43, loss = 0.29449065
+Validation score: 0.857143
+Iteration 44, loss = 0.28901676
+Validation score: 0.857143
+Iteration 45, loss = 0.28366842
+Validation score: 0.857143
+Iteration 46, loss = 0.27845956
+Validation score: 0.857143
+Iteration 47, loss = 0.27340316
+Validation score: 0.857143
+Iteration 48, loss = 0.26841810
+Validation score: 0.857143
+Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
+          0        1  Labels
+0   0.22598  0.77402       1
+1   0.39364  0.60636       1
+2   0.59543  0.40457       0
+3   0.48828  0.51172       1
+4   0.77323  0.22677       0
+5   0.42256  0.57744       1
+6   0.82682  0.17318       0
+7   0.58659  0.41341       1
+8   0.41286  0.58714       0
+9   0.24622  0.75378       1
+10  0.81753  0.18247       0
+11  0.55274  0.44726       0
+12  0.81615  0.18385       0
+13  0.47096  0.52904       1
+14  0.74438  0.25562       0
+15  0.43859  0.56141       0
+16  0.22855  0.77145       1
+17  0.84231  0.15769       0
+18  0.49578  0.50422       0
+19  0.63057  0.36943       0
+20  0.74718  0.25282       0
+21  0.77317  0.22683       1
+22  0.34878  0.65122       1
+23  0.56175  0.43825       0
+24  0.87594  0.12406       0
+25  0.20223  0.79777       1
+26  0.55389  0.44611       1
+27  0.49578  0.50422       0
+28  0.41914  0.58086       0
+29  0.48896  0.51104       1
+30  0.15506  0.84494       1
+31  0.37977  0.62023       1
+32  0.20696  0.79304       1
+0.7575757575757576
+Ben_Affleck------>Casey_Affleck
+Iteration 1, loss = 0.69007442
+Validation score: 0.481481
+Iteration 2, loss = 0.71384460
+Validation score: 0.555556
+Iteration 3, loss = 0.65021631
+Validation score: 0.518519
+Iteration 4, loss = 0.69614395
+Validation score: 0.481481
+Iteration 5, loss = 0.65722417
+Validation score: 0.518519
+Iteration 6, loss = 0.75703457
+Validation score: 0.518519
+Iteration 7, loss = 0.62713789
+Validation score: 0.481481
+Iteration 8, loss = 0.60788987
+Validation score: 0.592593
+Iteration 9, loss = 0.60285764
+Validation score: 0.703704
+Iteration 10, loss = 0.56914270
+Validation score: 0.666667
+Iteration 11, loss = 0.55887517
+Validation score: 0.666667
+Iteration 12, loss = 0.54626452
+Validation score: 0.629630
+Iteration 13, loss = 0.54115206
+Validation score: 0.592593
+Iteration 14, loss = 0.52378729
+Validation score: 0.481481
+Iteration 15, loss = 0.58557230
+Validation score: 0.592593
+Iteration 16, loss = 0.51705554
+Validation score: 0.481481
+Iteration 17, loss = 0.54984579
+Validation score: 0.444444
+Iteration 18, loss = 0.58175596
+Validation score: 0.592593
+Iteration 19, loss = 0.49921413
+Validation score: 0.481481
+Iteration 20, loss = 0.67160682
+Validation score: 0.481481
+Iteration 21, loss = 0.58375480
+Validation score: 0.666667
+Iteration 22, loss = 0.46688190
+Validation score: 0.629630
+Iteration 23, loss = 0.45961209
+Validation score: 0.555556
+Iteration 24, loss = 0.46471747
+Validation score: 0.666667
+Iteration 25, loss = 0.44916462
+Validation score: 0.703704
+Iteration 26, loss = 0.43334724
+Validation score: 0.592593
+Iteration 27, loss = 0.43949860
+Validation score: 0.703704
+Iteration 28, loss = 0.41670957
+Validation score: 0.666667
+Iteration 29, loss = 0.42923178
+Validation score: 0.666667
+Iteration 30, loss = 0.41352096
+Validation score: 0.629630
+Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
+          0        1  Labels
+0   0.51501  0.48499       1
+1   0.55713  0.44287       0
+2   0.48533  0.51467       1
+3   0.70851  0.29149       1
+4   0.61883  0.38117       0
+..      ...      ...     ...
+61  0.67355  0.32645       0
+62  0.44302  0.55698       1
+63  0.46735  0.53265       0
+64  0.40711  0.59289       0
+65  0.38533  0.61467       1
+
+[66 rows x 3 columns]
+0.5757575757575758
+Dave_Franco------>James_Franco
+Iteration 1, loss = 0.85776030
+Validation score: 0.487179
+Iteration 2, loss = 0.69321772
+Validation score: 0.461538
+Iteration 3, loss = 0.68402852
+Validation score: 0.461538
+Iteration 4, loss = 0.67742048
+Validation score: 0.487179
+Iteration 5, loss = 0.66857835
+Validation score: 0.538462
+Iteration 6, loss = 0.65961509
+Validation score: 0.564103
+Iteration 7, loss = 0.65305836
+Validation score: 0.461538
+Iteration 8, loss = 0.64542932
+Validation score: 0.538462
+Iteration 9, loss = 0.63938342
+Validation score: 0.487179
+Iteration 10, loss = 0.63637950
+Validation score: 0.538462
+Iteration 11, loss = 0.62551922
+Validation score: 0.512821
+Iteration 12, loss = 0.61837418
+Validation score: 0.538462
+Iteration 13, loss = 0.61354511
+Validation score: 0.487179
+Iteration 14, loss = 0.60846450
+Validation score: 0.538462
+Iteration 15, loss = 0.60310827
+Validation score: 0.564103
+Iteration 16, loss = 0.60722659
+Validation score: 0.487179
+Iteration 17, loss = 0.60001124
+Validation score: 0.512821
+Iteration 18, loss = 0.58177446
+Validation score: 0.564103
+Iteration 19, loss = 0.58040434
+Validation score: 0.564103
+Iteration 20, loss = 0.57763591
+Validation score: 0.564103
+Iteration 21, loss = 0.59557805
+Validation score: 0.538462
+Iteration 22, loss = 0.58444991
+Validation score: 0.538462
+Iteration 23, loss = 0.58160943
+Validation score: 0.512821
+Iteration 24, loss = 0.54698439
+Validation score: 0.589744
+Iteration 25, loss = 0.54112791
+Validation score: 0.589744
+Iteration 26, loss = 0.55876842
+Validation score: 0.538462
+Iteration 27, loss = 0.54145991
+Validation score: 0.589744
+Iteration 28, loss = 0.52637699
+Validation score: 0.615385
+Iteration 29, loss = 0.59056156
+Validation score: 0.538462
+Iteration 30, loss = 0.61573437
+Validation score: 0.666667
+Iteration 31, loss = 0.52447612
+Validation score: 0.589744
+Iteration 32, loss = 0.50691350
+Validation score: 0.564103
+Iteration 33, loss = 0.50964670
+Validation score: 0.589744
+Iteration 34, loss = 0.52298040
+Validation score: 0.615385
+Iteration 35, loss = 0.48821627
+Validation score: 0.589744
+Iteration 36, loss = 0.48245935
+Validation score: 0.589744
+Iteration 37, loss = 0.50265543
+Validation score: 0.589744
+Iteration 38, loss = 0.53986781
+Validation score: 0.512821
+Iteration 39, loss = 0.63558087
+Validation score: 0.538462
+Iteration 40, loss = 0.50106230
+Validation score: 0.615385
+Iteration 41, loss = 0.48768623
+Validation score: 0.615385
+Iteration 42, loss = 0.45929683
+Validation score: 0.666667
+Iteration 43, loss = 0.46729242
+Validation score: 0.538462
+Iteration 44, loss = 0.56619715
+Validation score: 0.589744
+Iteration 45, loss = 0.46629044
+Validation score: 0.615385
+Iteration 46, loss = 0.43838050
+Validation score: 0.564103
+Iteration 47, loss = 0.44015183
+Validation score: 0.564103
+Iteration 48, loss = 0.42860944
+Validation score: 0.641026
+Iteration 49, loss = 0.42506229
+Validation score: 0.717949
+Iteration 50, loss = 0.42979748
+Validation score: 0.717949
+Iteration 51, loss = 0.41608664
+Validation score: 0.564103
+Iteration 52, loss = 0.40652190
+Validation score: 0.589744
+Iteration 53, loss = 0.46384382
+Validation score: 0.589744
+Iteration 54, loss = 0.54155950
+Validation score: 0.564103
+Iteration 55, loss = 0.47941263
+Validation score: 0.615385
+Iteration 56, loss = 0.41049474
+Validation score: 0.564103
+Iteration 57, loss = 0.39383815
+Validation score: 0.717949
+Iteration 58, loss = 0.39035247
+Validation score: 0.717949
+Iteration 59, loss = 0.39401131
+Validation score: 0.589744
+Iteration 60, loss = 0.52443278
+Validation score: 0.512821
+Iteration 61, loss = 0.56471642
+Validation score: 0.743590
+Iteration 62, loss = 0.39272028
+Validation score: 0.615385
+Iteration 63, loss = 0.39093570
+Validation score: 0.641026
+Iteration 64, loss = 0.38061517
+Validation score: 0.666667
+Iteration 65, loss = 0.36305131
+Validation score: 0.615385
+Iteration 66, loss = 0.44066702
+Validation score: 0.589744
+Iteration 67, loss = 0.53182402
+Validation score: 0.589744
+Iteration 68, loss = 0.40596449
+Validation score: 0.743590
+Iteration 69, loss = 0.36566403
+Validation score: 0.589744
+Iteration 70, loss = 0.39021364
+Validation score: 0.589744
+Iteration 71, loss = 0.37923029
+Validation score: 0.589744
+Iteration 72, loss = 0.38602289
+Validation score: 0.589744
+Iteration 73, loss = 0.35752190
+Validation score: 0.589744
+Iteration 74, loss = 0.36884175
+Validation score: 0.589744
+Iteration 75, loss = 0.43922661
+Validation score: 0.512821
+Iteration 76, loss = 0.45408497
+Validation score: 0.589744
+Iteration 77, loss = 0.36955481
+Validation score: 0.615385
+Iteration 78, loss = 0.32214542
+Validation score: 0.666667
+Iteration 79, loss = 0.38450069
+Validation score: 0.589744
+Iteration 80, loss = 0.45212633
+Validation score: 0.589744
+Iteration 81, loss = 0.37840132
+Validation score: 0.743590
+Iteration 82, loss = 0.31445841
+Validation score: 0.743590
+Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
+          0        1  Labels
+0   0.42238  0.57762       0
+1   0.60454  0.39546       0
+2   0.14941  0.85059       1
+3   0.44902  0.55098       1
+4   0.58067  0.41933       0
+..      ...      ...     ...
+91  0.38484  0.61516       0
+92  0.37418  0.62582       0
+93  0.32074  0.67926       1
+94  0.32741  0.67259       1
+95  0.56615  0.43385       1
+
+[96 rows x 3 columns]
+0.6145833333333334
+Brad_Pit------>Benicio_del_Toro
+Iteration 1, loss = 0.70540030
+Validation score: 0.500000
+Iteration 2, loss = 0.69104769
+Validation score: 0.452381
+Iteration 3, loss = 0.69020215
+Validation score: 0.357143
+Iteration 4, loss = 0.68321227
+Validation score: 0.404762
+Iteration 5, loss = 0.67645602
+Validation score: 0.380952
+Iteration 6, loss = 0.65416854
+Validation score: 0.571429
+Iteration 7, loss = 0.64887940
+Validation score: 0.547619
+Iteration 8, loss = 0.64269806
+Validation score: 0.404762
+Iteration 9, loss = 0.63205618
+Validation score: 0.547619
+Iteration 10, loss = 0.67706338
+Validation score: 0.619048
+Iteration 11, loss = 0.61836274
+Validation score: 0.571429
+Iteration 12, loss = 0.61848387
+Validation score: 0.380952
+Iteration 13, loss = 0.62330101
+Validation score: 0.571429
+Iteration 14, loss = 0.59190069
+Validation score: 0.571429
+Iteration 15, loss = 0.58757780
+Validation score: 0.595238
+Iteration 16, loss = 0.57798278
+Validation score: 0.571429
+Iteration 17, loss = 0.57051116
+Validation score: 0.619048
+Iteration 18, loss = 0.57120985
+Validation score: 0.452381
+Iteration 19, loss = 0.61823518
+Validation score: 0.404762
+Iteration 20, loss = 0.56603191
+Validation score: 0.571429
+Iteration 21, loss = 0.57982058
+Validation score: 0.595238
+Iteration 22, loss = 0.55321791
+Validation score: 0.452381
+Iteration 23, loss = 0.59522796
+Validation score: 0.404762
+Iteration 24, loss = 0.54784427
+Validation score: 0.476190
+Iteration 25, loss = 0.55632474
+Validation score: 0.428571
+Iteration 26, loss = 0.57611493
+Validation score: 0.476190
+Iteration 27, loss = 0.52331400
+Validation score: 0.523810
+Iteration 28, loss = 0.51060015
+Validation score: 0.595238
+Iteration 29, loss = 0.50247293
+Validation score: 0.595238
+Iteration 30, loss = 0.50558689
+Validation score: 0.619048
+Iteration 31, loss = 0.50256426
+Validation score: 0.595238
+Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
+           0        1  Labels
+0    0.63504  0.36496       1
+1    0.60905  0.39095       0
+2    0.63880  0.36120       0
+3    0.60233  0.39767       0
+4    0.59680  0.40320       0
+..       ...      ...     ...
+99   0.67633  0.32367       0
+100  0.68716  0.31284       1
+101  0.44719  0.55281       1
+102  0.67129  0.32871       0
+103  0.56453  0.43547       1
+
+[104 rows x 3 columns]
+0.5673076923076923
+Brianna_Cuoco------>Kaley_Cuoco
+Iteration 1, loss = 0.76391116
+Validation score: 0.529412
+Iteration 2, loss = 0.68003393
+Validation score: 0.549020
+Iteration 3, loss = 0.67560942
+Validation score: 0.568627
+Iteration 4, loss = 0.67374729
+Validation score: 0.529412
+Iteration 5, loss = 0.65642363
+Validation score: 0.627451
+Iteration 6, loss = 0.65342129
+Validation score: 0.509804
+Iteration 7, loss = 0.64236280
+Validation score: 0.509804
+Iteration 8, loss = 0.63812449
+Validation score: 0.529412
+Iteration 9, loss = 0.64650529
+Validation score: 0.666667
+Iteration 10, loss = 0.62969332
+Validation score: 0.490196
+Iteration 11, loss = 0.64908367
+Validation score: 0.607843
+Iteration 12, loss = 0.61411705
+Validation score: 0.490196
+Iteration 13, loss = 0.66460631
+Validation score: 0.666667
+Iteration 14, loss = 0.60407460
+Validation score: 0.686275
+Iteration 15, loss = 0.59764122
+Validation score: 0.666667
+Iteration 16, loss = 0.59030470
+Validation score: 0.509804
+Iteration 17, loss = 0.59938086
+Validation score: 0.529412
+Iteration 18, loss = 0.58831028
+Validation score: 0.549020
+Iteration 19, loss = 0.58119559
+Validation score: 0.529412
+Iteration 20, loss = 0.57560558
+Validation score: 0.588235
+Iteration 21, loss = 0.56537738
+Validation score: 0.666667
+Iteration 22, loss = 0.56126537
+Validation score: 0.549020
+Iteration 23, loss = 0.57186909
+Validation score: 0.686275
+Iteration 24, loss = 0.54882176
+Validation score: 0.666667
+Iteration 25, loss = 0.54010919
+Validation score: 0.588235
+Iteration 26, loss = 0.55114928
+Validation score: 0.588235
+Iteration 27, loss = 0.57192178
+Validation score: 0.509804
+Iteration 28, loss = 0.57650463
+Validation score: 0.607843
+Iteration 29, loss = 0.52256264
+Validation score: 0.529412
+Iteration 30, loss = 0.57483465
+Validation score: 0.686275
+Iteration 31, loss = 0.51261165
+Validation score: 0.705882
+Iteration 32, loss = 0.50102332
+Validation score: 0.666667
+Iteration 33, loss = 0.49926125
+Validation score: 0.627451
+Iteration 34, loss = 0.62451020
+Validation score: 0.686275
+Iteration 35, loss = 0.50293429
+Validation score: 0.647059
+Iteration 36, loss = 0.51260250
+Validation score: 0.490196
+Iteration 37, loss = 0.60816125
+Validation score: 0.666667
+Iteration 38, loss = 0.49492095
+Validation score: 0.607843
+Iteration 39, loss = 0.50840540
+Validation score: 0.509804
+Iteration 40, loss = 0.52193221
+Validation score: 0.647059
+Iteration 41, loss = 0.47571311
+Validation score: 0.549020
+Iteration 42, loss = 0.49158330
+Validation score: 0.686275
+Iteration 43, loss = 0.45177646
+Validation score: 0.666667
+Iteration 44, loss = 0.44843960
+Validation score: 0.529412
+Iteration 45, loss = 0.51679708
+Validation score: 0.607843
+Iteration 46, loss = 0.48566531
+Validation score: 0.549020
+Iteration 47, loss = 0.55396388
+Validation score: 0.627451
+Iteration 48, loss = 0.44897818
+Validation score: 0.647059
+Iteration 49, loss = 0.46149750
+Validation score: 0.549020
+Iteration 50, loss = 0.54651834
+Validation score: 0.529412
+Iteration 51, loss = 0.52116483
+Validation score: 0.686275
+Iteration 52, loss = 0.42340072
+Validation score: 0.686275
+Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
+           0        1  Labels
+0    0.48514  0.51486       0
+1    0.52906  0.47094       0
+2    0.81668  0.18332       0
+3    0.51065  0.48935       0
+4    0.54783  0.45217       1
+..       ...      ...     ...
+122  0.32852  0.67148       0
+123  0.74903  0.25097       1
+124  0.63196  0.36804       1
+125  0.37288  0.62712       0
+126  0.40134  0.59866       0
+
+[127 rows x 3 columns]
+0.6220472440944882
+Haley_Duff------>Hilary
+Iteration 1, loss = 0.79802185
+Validation score: 0.559322
+Iteration 2, loss = 0.68068143
+Validation score: 0.525424
+Iteration 3, loss = 0.67039831
+Validation score: 0.576271
+Iteration 4, loss = 0.66306519
+Validation score: 0.542373
+Iteration 5, loss = 0.65138659
+Validation score: 0.508475
+Iteration 6, loss = 0.65899808
+Validation score: 0.542373
+Iteration 7, loss = 0.64517003
+Validation score: 0.542373
+Iteration 8, loss = 0.66288669
+Validation score: 0.593220
+Iteration 9, loss = 0.62045959
+Validation score: 0.610169
+Iteration 10, loss = 0.61987319
+Validation score: 0.593220
+Iteration 11, loss = 0.60702412
+Validation score: 0.457627
+Iteration 12, loss = 0.61234955
+Validation score: 0.593220
+Iteration 13, loss = 0.60706519
+Validation score: 0.576271
+Iteration 14, loss = 0.58690169
+Validation score: 0.576271
+Iteration 15, loss = 0.57915634
+Validation score: 0.576271
+Iteration 16, loss = 0.58544544
+Validation score: 0.593220
+Iteration 17, loss = 0.56849904
+Validation score: 0.677966
+Iteration 18, loss = 0.58212181
+Validation score: 0.661017
+Iteration 19, loss = 0.58350349
+Validation score: 0.559322
+Iteration 20, loss = 0.62362294
+Validation score: 0.661017
+Iteration 21, loss = 0.55391396
+Validation score: 0.593220
+Iteration 22, loss = 0.55846779
+Validation score: 0.593220
+Iteration 23, loss = 0.53490276
+Validation score: 0.694915
+Iteration 24, loss = 0.54662151
+Validation score: 0.542373
+Iteration 25, loss = 0.53669185
+Validation score: 0.474576
+Iteration 26, loss = 0.67756838
+Validation score: 0.610169
+Iteration 27, loss = 0.53348141
+Validation score: 0.661017
+Iteration 28, loss = 0.53005615
+Validation score: 0.593220
+Iteration 29, loss = 0.52176503
+Validation score: 0.593220
+Iteration 30, loss = 0.56860034
+Validation score: 0.542373
+Iteration 31, loss = 0.51968663
+Validation score: 0.576271
+Iteration 32, loss = 0.60501634
+Validation score: 0.610169
+Iteration 33, loss = 0.50948573
+Validation score: 0.677966
+Iteration 34, loss = 0.49282925
+Validation score: 0.677966
+Iteration 35, loss = 0.48838400
+Validation score: 0.542373
+Iteration 36, loss = 0.49251274
+Validation score: 0.677966
+Iteration 37, loss = 0.48678155
+Validation score: 0.508475
+Iteration 38, loss = 0.55574658
+Validation score: 0.677966
+Iteration 39, loss = 0.47531059
+Validation score: 0.677966
+Iteration 40, loss = 0.45945658
+Validation score: 0.694915
+Iteration 41, loss = 0.45062426
+Validation score: 0.677966
+Iteration 42, loss = 0.47863513
+Validation score: 0.559322
+Iteration 43, loss = 0.55091131
+Validation score: 0.576271
+Iteration 44, loss = 0.49102861
+Validation score: 0.711864
+Iteration 45, loss = 0.44518865
+Validation score: 0.694915
+Iteration 46, loss = 0.43962517
+Validation score: 0.677966
+Iteration 47, loss = 0.44144845
+Validation score: 0.661017
+Iteration 48, loss = 0.43740568
+Validation score: 0.542373
+Iteration 49, loss = 0.53450564
+Validation score: 0.508475
+Iteration 50, loss = 0.56151373
+Validation score: 0.644068
+Iteration 51, loss = 0.43352170
+Validation score: 0.677966
+Iteration 52, loss = 0.42866176
+Validation score: 0.694915
+Iteration 53, loss = 0.42331895
+Validation score: 0.508475
+Iteration 54, loss = 0.65431519
+Validation score: 0.627119
+Iteration 55, loss = 0.44771658
+Validation score: 0.677966
+Iteration 56, loss = 0.41112850
+Validation score: 0.627119
+Iteration 57, loss = 0.41150041
+Validation score: 0.627119
+Iteration 58, loss = 0.39771131
+Validation score: 0.694915
+Iteration 59, loss = 0.37980425
+Validation score: 0.677966
+Iteration 60, loss = 0.37504503
+Validation score: 0.677966
+Iteration 61, loss = 0.39607451
+Validation score: 0.542373
+Iteration 62, loss = 0.57074558
+Validation score: 0.627119
+Iteration 63, loss = 0.39352669
+Validation score: 0.661017
+Iteration 64, loss = 0.37466180
+Validation score: 0.627119
+Iteration 65, loss = 0.36690166
+Validation score: 0.677966
+Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
+           0        1  Labels
+0    0.46852  0.53148       1
+1    0.52333  0.47667       1
+2    0.65363  0.34637       0
+3    0.74212  0.25788       1
+4    0.55412  0.44588       0
+..       ...      ...     ...
+141  0.81229  0.18771       0
+142  0.55949  0.44051       0
+143  0.22071  0.77929       1
+144  0.39549  0.60451       1
+145  0.81937  0.18063       0
+
+[146 rows x 3 columns]
+0.6232876712328768
+Zooey_Deschanel------>Katy_Perry
+Iteration 1, loss = 0.71845353
+Validation score: 0.619048
+Iteration 2, loss = 0.67568682
+Validation score: 0.634921
+Iteration 3, loss = 0.66538559
+Validation score: 0.523810
+Iteration 4, loss = 0.65745435
+Validation score: 0.571429
+Iteration 5, loss = 0.65906451
+Validation score: 0.650794
+Iteration 6, loss = 0.64241653
+Validation score: 0.619048
+Iteration 7, loss = 0.64113591
+Validation score: 0.619048
+Iteration 8, loss = 0.65306134
+Validation score: 0.619048
+Iteration 9, loss = 0.62845538
+Validation score: 0.619048
+Iteration 10, loss = 0.62563500
+Validation score: 0.603175
+Iteration 11, loss = 0.61302771
+Validation score: 0.634921
+Iteration 12, loss = 0.60403361
+Validation score: 0.650794
+Iteration 13, loss = 0.59856328
+Validation score: 0.650794
+Iteration 14, loss = 0.62866570
+Validation score: 0.555556
+Iteration 15, loss = 0.62773762
+Validation score: 0.650794
+Iteration 16, loss = 0.59832964
+Validation score: 0.634921
+Iteration 17, loss = 0.57711819
+Validation score: 0.619048
+Iteration 18, loss = 0.57923520
+Validation score: 0.634921
+Iteration 19, loss = 0.62486830
+Validation score: 0.619048
+Iteration 20, loss = 0.56987229
+Validation score: 0.619048
+Iteration 21, loss = 0.56586864
+Validation score: 0.634921
+Iteration 22, loss = 0.55550239
+Validation score: 0.666667
+Iteration 23, loss = 0.54518413
+Validation score: 0.650794
+Iteration 24, loss = 0.55025331
+Validation score: 0.619048
+Iteration 25, loss = 0.53921145
+Validation score: 0.698413
+Iteration 26, loss = 0.53434261
+Validation score: 0.523810
+Iteration 27, loss = 0.64638943
+Validation score: 0.666667
+Iteration 28, loss = 0.53935620
+Validation score: 0.650794
+Iteration 29, loss = 0.53222671
+Validation score: 0.666667
+Iteration 30, loss = 0.51420083
+Validation score: 0.650794
+Iteration 31, loss = 0.50823057
+Validation score: 0.666667
+Iteration 32, loss = 0.52612959
+Validation score: 0.555556
+Iteration 33, loss = 0.52605711
+Validation score: 0.619048
+Iteration 34, loss = 0.55099174
+Validation score: 0.619048
+Iteration 35, loss = 0.58774035
+Validation score: 0.666667
+Iteration 36, loss = 0.50841270
+Validation score: 0.666667
+Iteration 37, loss = 0.49284824
+Validation score: 0.650794
+Iteration 38, loss = 0.47862264
+Validation score: 0.619048
+Iteration 39, loss = 0.50472910
+Validation score: 0.619048
+Iteration 40, loss = 0.48381651
+Validation score: 0.650794
+Iteration 41, loss = 0.48646686
+Validation score: 0.587302
+Iteration 42, loss = 0.53980112
+Validation score: 0.603175
+Iteration 43, loss = 0.48483795
+Validation score: 0.619048
+Iteration 44, loss = 0.50704114
+Validation score: 0.619048
+Iteration 45, loss = 0.47094022
+Validation score: 0.571429
+Iteration 46, loss = 0.53709490
+Validation score: 0.603175
+Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
+           0        1  Labels
+0    0.64727  0.35273       0
+1    0.53254  0.46746       0
+2    0.55993  0.44007       0
+3    0.71122  0.28878       0
+4    0.79496  0.20504       0
+..       ...      ...     ...
+153  0.38032  0.61968       1
+154  0.57225  0.42775       0
+155  0.58666  0.41334       0
+156  0.84938  0.15062       0
+157  0.66894  0.33106       0
+
+[158 rows x 3 columns]
+0.6835443037974683

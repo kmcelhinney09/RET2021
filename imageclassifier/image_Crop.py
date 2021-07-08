@@ -27,7 +27,7 @@ def convert_and_trim_bb(image, rect):
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", type=str, required=True,
+ap.add_argument("-i", "--image", type=str, required=False,
 	help="path to input image")
 ap.add_argument("-u", "--upsample", type=int, default=1,
 	help="# of times to upsample")
@@ -41,13 +41,13 @@ detector = dlib.get_frontal_face_detector()
 # load the input image from disk, resize it, and convert it from
 # BGR to RGB channel ordering (which is what dlib expects)
 
-imagePaths = list(paths.list_images(args['image']))
+#imagePaths = list(paths.list_images(args['image']))
+imagePaths = list(paths.list_images("image_data/First5"))
 print(imagePaths)
 for (i,imagePath) in enumerate(imagePaths):
 	file = imagePath.split(os.path.sep)[-1]
 	name = imagePath.split(os.path.sep)[-2]
 	name = name + "_Cropped"
-
 	image = cv2.imread(imagePath)
 	image = imutils.resize(image, width=256)
 	#print(image.shape)
@@ -68,16 +68,18 @@ for (i,imagePath) in enumerate(imagePaths):
 	# loop over the bounding boxes
 	for (x, y, w, h) in boxes:
 		# draw the bounding box on our image
-		cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+		#cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 		cropped = image[y:y+h, x:x+w]
 
 	#print(cropped_path)
 	# show the output image
 	#cv2.imshow("Output", image)
 	#cv2.imshow("Cropped", cropped)
-	print(os.path.join(os.path.join(args["destination"],name),file))
-	cv2.imwrite(os.path.join(os.path.join(args["destination"],name),file), cropped)
+	# print(os.path.join(os.path.join(args["destination"],name),file))
+	print(os.path.join(os.path.join(os.path.join("image_data","cropped_image"),name),file))
+	cv2.imwrite(os.path.join(os.path.join(os.path.join("image_data","cropped_image"),name),file), cropped)
+
 	#cv2.waitKey(0)
-
-
-
+#
+#
+#

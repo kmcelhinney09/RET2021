@@ -16,6 +16,7 @@ namedict = {
 "James Franco" : "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/jamesfranco.png",
 "Kaley Cuoco" : "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/kaleycuoco.png",
 "Solange" : "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/solange.png",
+"Solange" : "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/solange.png",
 }
 
 def main():

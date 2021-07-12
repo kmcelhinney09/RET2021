@@ -68,7 +68,7 @@ np_celeb_labels = np.asarray(celeb_labels)
 # Build a train and test split from the given data to put through the classifier
 x_train, x_test, y_train, y_test = train_test_split(np_celeb_data, np_celeb_labels, test_size=.2, random_state=1)
 
-# print(x_train.shape)
+print(x_train.shape)
 # print(x_train)
 # print(y_train.shape)
 # print(y_train)

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 import PySimpleGUI as sg
 import cv2
 import numpy as np
@@ -37,13 +37,14 @@ def main():
 
         elif event == 'Stop':
             recording = False
+            ret, frame = cap.read()
             img = np.full((480, 640), 255)
             # this is faster, shorter and needs less includes
-            imgbytes = cv2.imencode('.png', img)[1].tobytes()
+            imgbytes = cv2.imencode('.png', frame)[1]
             window['image'].update(data=imgbytes)
 
         if recording:
-            ret, frame = cap.read()
+
             imgbytes = cv2.imencode('.png', frame)[1].tobytes()  # ditto
             window['image'].update(data=imgbytes)
 

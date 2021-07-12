@@ -8,8 +8,9 @@ from imutils import paths
 import pandas as pd
 import contextlib
 
+classifying_models = {}
 # This will out put the console data to a file for review
-with open('Classifier_Output.txt', 'w') as f:
+with open('Classifier_Output2.txt', 'w') as f:
     with contextlib.redirect_stdout(f):
 
         # set numpy to out put decimals in stead of scientific notation
@@ -63,7 +64,7 @@ with open('Classifier_Output.txt', 'w') as f:
             np_celeb_data = np.asarray(celeb_data)
             np_celeb_labels = np.asarray(celeb_labels)
             # print(np.unique(np_celeb_labels))
-            # print(np_celeb_data.shape)
+            print(np_celeb_data.shape)
 
             # Build a train and test split from the given data to put through the classifier
             x_train, x_test, y_train, y_test = train_test_split(
@@ -76,16 +77,14 @@ with open('Classifier_Output.txt', 'w') as f:
             # create an MLPClassifier to put image data through and fit it
             clf = MLPClassifier(solver='sgd',
                                 activation='relu',
-                                alpha=1e-5,
+                                alpha=1,
                                 hidden_layer_sizes=(512, 512),
-                                n_iter_no_change=20,
                                 early_stopping=True,
-                                verbose=True
                                 )
 
             print("{}------>{}".format(celb_list[0], celb_list[1]))
             clf.fit(x_train, y_train)
-
+            classifying_models[target_name] = clf
             # produce a pandas DataFrame from a predict_proba prediction and output a DataFrame with probability the
             # test images fit the target label
             pd_prediction = pd.DataFrame(clf.predict_proba(x_test), columns=clf.classes_)
@@ -95,3 +94,4 @@ with open('Classifier_Output.txt', 'w') as f:
             print(pd_prediction.round(decimals=5))
             # print the accuracy score of the model to the console
             print(" The mean accuracy of this model is: {}".format(clf.score(x_test, y_test)))
+        print(classifying_models)

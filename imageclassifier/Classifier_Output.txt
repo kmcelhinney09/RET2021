@@ -1,769 +1,556 @@
 Beyonce------>Solange
-Iteration 1, loss = 0.70562194
+Iteration 1, loss = 0.70744502
+Validation score: 0.428571
+Iteration 2, loss = 0.70511228
+Validation score: 0.428571
+Iteration 3, loss = 0.70220151
+Validation score: 0.428571
+Iteration 4, loss = 0.69911924
+Validation score: 0.428571
+Iteration 5, loss = 0.69621053
+Validation score: 0.428571
+Iteration 6, loss = 0.69372605
 Validation score: 0.571429
-Iteration 2, loss = 0.68972982
+Iteration 7, loss = 0.69180959
 Validation score: 0.571429
-Iteration 3, loss = 0.67023004
+Iteration 8, loss = 0.69050349
 Validation score: 0.571429
-Iteration 4, loss = 0.65150605
+Iteration 9, loss = 0.68976664
 Validation score: 0.571429
-Iteration 5, loss = 0.63410176
-Validation score: 0.642857
-Iteration 6, loss = 0.61863664
-Validation score: 0.642857
-Iteration 7, loss = 0.60403684
-Validation score: 0.714286
-Iteration 8, loss = 0.58985320
-Validation score: 0.785714
-Iteration 9, loss = 0.57545691
-Validation score: 0.714286
-Iteration 10, loss = 0.56141334
-Validation score: 0.714286
-Iteration 11, loss = 0.54755522
-Validation score: 0.642857
-Iteration 12, loss = 0.53446130
-Validation score: 0.714286
-Iteration 13, loss = 0.52190597
+Iteration 10, loss = 0.68949984
 Validation score: 0.571429
-Iteration 14, loss = 0.50942623
-Validation score: 0.642857
-Iteration 15, loss = 0.49661878
-Validation score: 0.642857
-Iteration 16, loss = 0.48475750
-Validation score: 0.642857
-Iteration 17, loss = 0.47360591
-Validation score: 0.642857
-Iteration 18, loss = 0.46337981
-Validation score: 0.642857
-Iteration 19, loss = 0.45363373
-Validation score: 0.642857
-Iteration 20, loss = 0.44394070
-Validation score: 0.642857
-Iteration 21, loss = 0.43443569
-Validation score: 0.642857
-Iteration 22, loss = 0.42524282
-Validation score: 0.714286
-Iteration 23, loss = 0.41633522
+Iteration 11, loss = 0.68957269
 Validation score: 0.571429
-Iteration 24, loss = 0.40781852
-Validation score: 0.642857
-Iteration 25, loss = 0.39943548
+Iteration 12, loss = 0.68984809
 Validation score: 0.571429
-Iteration 26, loss = 0.39119466
-Validation score: 0.714286
-Iteration 27, loss = 0.38323017
+Iteration 13, loss = 0.69020137
 Validation score: 0.571429
-Iteration 28, loss = 0.37516245
-Validation score: 0.714286
-Iteration 29, loss = 0.36759649
+Iteration 14, loss = 0.69053293
+Validation score: 0.571429
+Iteration 15, loss = 0.69077441
+Validation score: 0.571429
+Iteration 16, loss = 0.69088925
+Validation score: 0.571429
+Iteration 17, loss = 0.69086911
+Validation score: 0.571429
+Iteration 18, loss = 0.69072755
+Validation score: 0.571429
+Iteration 19, loss = 0.69049261
+Validation score: 0.571429
+Iteration 20, loss = 0.69019932
+Validation score: 0.571429
+Iteration 21, loss = 0.68988325
+Validation score: 0.571429
+Iteration 22, loss = 0.68957553
+Validation score: 0.571429
+Iteration 23, loss = 0.68929976
+Validation score: 0.571429
+Iteration 24, loss = 0.68907054
+Validation score: 0.571429
+Iteration 25, loss = 0.68889366
+Validation score: 0.571429
+Iteration 26, loss = 0.68876737
+Validation score: 0.571429
+Iteration 27, loss = 0.68868432
 Validation score: 0.571429
 Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
           0        1  Labels
-0   0.42383  0.57617       1
-1   0.49001  0.50999       1
-2   0.52218  0.47782       0
-3   0.55116  0.44884       1
-4   0.61625  0.38375       0
-5   0.50207  0.49793       1
-6   0.66854  0.33146       0
-7   0.48338  0.51662       1
-8   0.52068  0.47932       0
-9   0.46167  0.53833       1
-10  0.62964  0.37036       0
-11  0.57182  0.42818       0
-12  0.64968  0.35032       0
-13  0.47107  0.52893       1
-14  0.63506  0.36494       0
-15  0.44803  0.55197       0
-16  0.39281  0.60719       1
-17  0.71819  0.28181       0
-18  0.50172  0.49828       0
-19  0.59607  0.40393       0
-20  0.58033  0.41967       0
-21  0.66279  0.33721       1
-22  0.44539  0.55461       1
-23  0.57743  0.42257       0
-24  0.70206  0.29794       0
-25  0.37696  0.62304       1
-26  0.56891  0.43109       1
-27  0.50172  0.49828       0
-28  0.46885  0.53115       0
-29  0.42763  0.57237       1
-30  0.38843  0.61157       1
-31  0.43543  0.56457       1
-32  0.37991  0.62009       1
- The mean accuracy of this model is: 0.8181818181818182
+0   0.50843  0.49157       1
+1   0.50813  0.49187       1
+2   0.50672  0.49328       0
+3   0.50648  0.49352       1
+4   0.50821  0.49179       0
+5   0.50782  0.49218       1
+6   0.50782  0.49218       0
+7   0.50799  0.49201       1
+8   0.50817  0.49183       0
+9   0.50798  0.49202       1
+10  0.50974  0.49026       0
+11  0.50902  0.49098       0
+12  0.50802  0.49198       0
+13  0.50734  0.49266       1
+14  0.50847  0.49153       0
+15  0.50920  0.49080       0
+16  0.50836  0.49164       1
+17  0.50918  0.49082       0
+18  0.50966  0.49034       0
+19  0.50816  0.49184       0
+20  0.50878  0.49122       0
+21  0.50782  0.49218       1
+22  0.50791  0.49209       1
+23  0.50782  0.49218       0
+24  0.50815  0.49185       0
+25  0.50914  0.49086       1
+26  0.50702  0.49298       1
+27  0.50966  0.49034       0
+28  0.50771  0.49229       0
+29  0.50849  0.49151       1
+30  0.50699  0.49301       1
+31  0.50897  0.49103       1
+32  0.50596  0.49404       1
+ The mean accuracy of this model is: 0.5151515151515151
+{'Beyonce': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True)}
 Ben_Affleck------>Casey_Affleck
-Iteration 1, loss = 0.80961564
-Validation score: 0.555556
-Iteration 2, loss = 0.69810165
+Iteration 1, loss = 0.69674344
 Validation score: 0.481481
-Iteration 3, loss = 0.68878158
-Validation score: 0.629630
-Iteration 4, loss = 0.66331722
-Validation score: 0.666667
-Iteration 5, loss = 0.65496280
-Validation score: 0.592593
-Iteration 6, loss = 0.65372964
-Validation score: 0.629630
-Iteration 7, loss = 0.63141991
+Iteration 2, loss = 0.69525843
+Validation score: 0.481481
+Iteration 3, loss = 0.69377025
+Validation score: 0.481481
+Iteration 4, loss = 0.69343553
+Validation score: 0.481481
+Iteration 5, loss = 0.69272747
 Validation score: 0.518519
-Iteration 8, loss = 0.69752474
+Iteration 6, loss = 0.69290417
+Validation score: 0.518519
+Iteration 7, loss = 0.69297464
+Validation score: 0.518519
+Iteration 8, loss = 0.69315027
+Validation score: 0.518519
+Iteration 9, loss = 0.69323168
+Validation score: 0.518519
+Iteration 10, loss = 0.69343282
+Validation score: 0.518519
+Iteration 11, loss = 0.69282813
+Validation score: 0.518519
+Iteration 12, loss = 0.69248054
+Validation score: 0.518519
+Iteration 13, loss = 0.69220904
 Validation score: 0.555556
-Iteration 9, loss = 0.62216162
+Iteration 14, loss = 0.69207324
+Validation score: 0.296296
+Iteration 15, loss = 0.69214883
 Validation score: 0.518519
-Iteration 10, loss = 0.64917644
+Iteration 16, loss = 0.69200462
 Validation score: 0.518519
-Iteration 11, loss = 0.60465432
+Iteration 17, loss = 0.69242430
 Validation score: 0.518519
-Iteration 12, loss = 0.66226451
-Validation score: 0.592593
-Iteration 13, loss = 0.57716000
-Validation score: 0.629630
-Iteration 14, loss = 0.56171574
-Validation score: 0.629630
-Iteration 15, loss = 0.56167228
-Validation score: 0.629630
-Iteration 16, loss = 0.54401823
+Iteration 18, loss = 0.69321904
 Validation score: 0.518519
-Iteration 17, loss = 0.62421168
-Validation score: 0.629630
-Iteration 18, loss = 0.52277438
-Validation score: 0.629630
-Iteration 19, loss = 0.53212303
+Iteration 19, loss = 0.69435135
+Validation score: 0.518519
+Iteration 20, loss = 0.69438048
+Validation score: 0.518519
+Iteration 21, loss = 0.69388752
+Validation score: 0.518519
+Iteration 22, loss = 0.69355003
+Validation score: 0.518519
+Iteration 23, loss = 0.69274558
+Validation score: 0.518519
+Iteration 24, loss = 0.69260904
+Validation score: 0.518519
+Iteration 25, loss = 0.69165348
 Validation score: 0.555556
-Iteration 20, loss = 0.56065394
-Validation score: 0.629630
-Iteration 21, loss = 0.51490343
-Validation score: 0.703704
-Iteration 22, loss = 0.49526236
-Validation score: 0.629630
-Iteration 23, loss = 0.48288451
+Iteration 26, loss = 0.69101721
+Validation score: 0.481481
+Iteration 27, loss = 0.69099766
+Validation score: 0.481481
+Iteration 28, loss = 0.69252314
+Validation score: 0.481481
+Iteration 29, loss = 0.69304554
+Validation score: 0.481481
+Iteration 30, loss = 0.69400637
+Validation score: 0.481481
+Iteration 31, loss = 0.69188820
+Validation score: 0.481481
+Iteration 32, loss = 0.69090597
+Validation score: 0.370370
+Iteration 33, loss = 0.69050140
 Validation score: 0.518519
-Iteration 24, loss = 0.60493453
-Validation score: 0.555556
-Iteration 25, loss = 0.46959118
-Validation score: 0.629630
-Iteration 26, loss = 0.50842391
-Validation score: 0.592593
-Iteration 27, loss = 0.47033779
-Validation score: 0.629630
-Iteration 28, loss = 0.44705409
-Validation score: 0.592593
-Iteration 29, loss = 0.50308337
-Validation score: 0.592593
-Iteration 30, loss = 0.45449017
-Validation score: 0.666667
-Iteration 31, loss = 0.45408792
-Validation score: 0.592593
-Iteration 32, loss = 0.42302777
-Validation score: 0.666667
-Iteration 33, loss = 0.41669103
-Validation score: 0.629630
-Iteration 34, loss = 0.40393537
-Validation score: 0.666667
-Iteration 35, loss = 0.43061612
-Validation score: 0.703704
-Iteration 36, loss = 0.39707246
-Validation score: 0.703704
-Iteration 37, loss = 0.39652141
-Validation score: 0.740741
-Iteration 38, loss = 0.41294204
-Validation score: 0.592593
-Iteration 39, loss = 0.37999938
-Validation score: 0.666667
-Iteration 40, loss = 0.38287418
-Validation score: 0.703704
-Iteration 41, loss = 0.36972151
-Validation score: 0.629630
-Iteration 42, loss = 0.44836780
-Validation score: 0.592593
-Iteration 43, loss = 0.36077788
-Validation score: 0.703704
-Iteration 44, loss = 0.34381468
-Validation score: 0.703704
-Iteration 45, loss = 0.38946668
-Validation score: 0.666667
-Iteration 46, loss = 0.35986736
-Validation score: 0.592593
-Iteration 47, loss = 0.35219002
-Validation score: 0.629630
-Iteration 48, loss = 0.35182395
-Validation score: 0.592593
-Iteration 49, loss = 0.31724310
+Iteration 34, loss = 0.69097537
 Validation score: 0.518519
-Iteration 50, loss = 0.65369734
-Validation score: 0.592593
-Iteration 51, loss = 0.32221319
-Validation score: 0.629630
-Iteration 52, loss = 0.47654284
-Validation score: 0.740741
-Iteration 53, loss = 0.31968926
-Validation score: 0.629630
-Iteration 54, loss = 0.36438674
-Validation score: 0.740741
-Iteration 55, loss = 0.34621712
-Validation score: 0.703704
-Iteration 56, loss = 0.28687240
-Validation score: 0.703704
-Iteration 57, loss = 0.28605066
-Validation score: 0.629630
-Iteration 58, loss = 0.28246933
-Validation score: 0.703704
 Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
           0        1  Labels
-0   0.65473  0.34527       1
-1   0.85934  0.14066       0
-2   0.35909  0.64091       1
-3   0.96809  0.03191       1
-4   0.80203  0.19797       0
+0   0.50571  0.49429       1
+1   0.50388  0.49612       0
+2   0.50581  0.49419       1
+3   0.50471  0.49529       1
+4   0.50152  0.49848       0
 ..      ...      ...     ...
-61  0.88479  0.11521       0
-62  0.43032  0.56968       1
-63  0.32855  0.67145       0
-64  0.60424  0.39576       0
-65  0.42590  0.57410       1
+61  0.50569  0.49431       0
+62  0.50721  0.49279       1
+63  0.51058  0.48942       0
+64  0.50146  0.49854       0
+65  0.50491  0.49509       1
 
 [66 rows x 3 columns]
- The mean accuracy of this model is: 0.7121212121212122
+ The mean accuracy of this model is: 0.5454545454545454
+{'Beyonce': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Ben_Affleck': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True)}
 Dave_Franco------>James_Franco
-Iteration 1, loss = 0.70222635
-Validation score: 0.538462
-Iteration 2, loss = 0.71588152
+Iteration 1, loss = 0.79496993
 Validation score: 0.512821
-Iteration 3, loss = 0.69018945
-Validation score: 0.461538
-Iteration 4, loss = 0.67466200
-Validation score: 0.538462
-Iteration 5, loss = 0.66898532
-Validation score: 0.564103
-Iteration 6, loss = 0.65495824
-Validation score: 0.564103
-Iteration 7, loss = 0.64017697
-Validation score: 0.564103
-Iteration 8, loss = 0.63351965
+Iteration 2, loss = 0.76260930
 Validation score: 0.512821
-Iteration 9, loss = 0.64243352
-Validation score: 0.666667
-Iteration 10, loss = 0.61553567
-Validation score: 0.589744
-Iteration 11, loss = 0.61602516
-Validation score: 0.538462
-Iteration 12, loss = 0.60860016
+Iteration 3, loss = 0.72866744
 Validation score: 0.512821
-Iteration 13, loss = 0.61543818
-Validation score: 0.538462
-Iteration 14, loss = 0.58598352
+Iteration 4, loss = 0.70528274
 Validation score: 0.512821
-Iteration 15, loss = 0.69404323
-Validation score: 0.538462
-Iteration 16, loss = 0.61036914
-Validation score: 0.641026
-Iteration 17, loss = 0.56928507
-Validation score: 0.641026
-Iteration 18, loss = 0.55765154
-Validation score: 0.615385
-Iteration 19, loss = 0.58888534
-Validation score: 0.538462
-Iteration 20, loss = 0.63764088
-Validation score: 0.589744
-Iteration 21, loss = 0.55548513
-Validation score: 0.666667
-Iteration 22, loss = 0.53154593
-Validation score: 0.615385
-Iteration 23, loss = 0.52667819
-Validation score: 0.615385
-Iteration 24, loss = 0.55609106
-Validation score: 0.538462
-Iteration 25, loss = 0.63082341
-Validation score: 0.538462
-Iteration 26, loss = 0.54855374
-Validation score: 0.589744
-Iteration 27, loss = 0.50456867
-Validation score: 0.589744
-Iteration 28, loss = 0.50430663
-Validation score: 0.564103
-Iteration 29, loss = 0.50626865
-Validation score: 0.589744
-Iteration 30, loss = 0.48118162
-Validation score: 0.589744
+Iteration 5, loss = 0.69333449
+Validation score: 0.487179
+Iteration 6, loss = 0.69630238
+Validation score: 0.487179
+Iteration 7, loss = 0.69962671
+Validation score: 0.487179
+Iteration 8, loss = 0.70124855
+Validation score: 0.487179
+Iteration 9, loss = 0.70173422
+Validation score: 0.487179
+Iteration 10, loss = 0.69981606
+Validation score: 0.487179
+Iteration 11, loss = 0.69716508
+Validation score: 0.487179
+Iteration 12, loss = 0.69430796
+Validation score: 0.487179
+Iteration 13, loss = 0.69309327
+Validation score: 0.512821
+Iteration 14, loss = 0.69249248
+Validation score: 0.512821
+Iteration 15, loss = 0.69237994
+Validation score: 0.512821
+Iteration 16, loss = 0.69269006
+Validation score: 0.512821
+Iteration 17, loss = 0.69309475
+Validation score: 0.512821
+Iteration 18, loss = 0.69302399
+Validation score: 0.512821
+Iteration 19, loss = 0.69281549
+Validation score: 0.512821
+Iteration 20, loss = 0.69271669
+Validation score: 0.512821
+Iteration 21, loss = 0.69242186
+Validation score: 0.512821
+Iteration 22, loss = 0.69261146
+Validation score: 0.512821
 Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
           0        1  Labels
-0   0.42585  0.57415       0
-1   0.51665  0.48335       0
-2   0.36434  0.63566       1
-3   0.53125  0.46875       1
-4   0.43171  0.56829       0
+0   0.70267  0.29733       0
+1   0.70497  0.29503       0
+2   0.70476  0.29524       1
+3   0.70555  0.29445       1
+4   0.70353  0.29647       0
 ..      ...      ...     ...
-91  0.41099  0.58901       0
-92  0.49638  0.50362       0
-93  0.42307  0.57693       1
-94  0.38911  0.61089       1
-95  0.44590  0.55410       1
+91  0.70483  0.29517       0
+92  0.70595  0.29405       0
+93  0.70538  0.29462       1
+94  0.70575  0.29425       1
+95  0.70460  0.29540       1
 
 [96 rows x 3 columns]
- The mean accuracy of this model is: 0.5729166666666666
+ The mean accuracy of this model is: 0.5208333333333334
+{'Beyonce': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Ben_Affleck': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Dave_Franco': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True)}
 Brad_Pit------>Benicio_del_Toro
-Iteration 1, loss = 1.00363773
+Iteration 1, loss = 0.70557421
+Validation score: 0.476190
+Iteration 2, loss = 0.70175771
+Validation score: 0.476190
+Iteration 3, loss = 0.69751127
+Validation score: 0.476190
+Iteration 4, loss = 0.69467640
 Validation score: 0.500000
-Iteration 2, loss = 0.72705603
-Validation score: 0.547619
-Iteration 3, loss = 0.68781105
-Validation score: 0.547619
-Iteration 4, loss = 0.68150478
-Validation score: 0.738095
-Iteration 5, loss = 0.67499200
-Validation score: 0.690476
-Iteration 6, loss = 0.67114548
-Validation score: 0.714286
-Iteration 7, loss = 0.66539814
-Validation score: 0.714286
-Iteration 8, loss = 0.66066407
-Validation score: 0.619048
-Iteration 9, loss = 0.65412668
-Validation score: 0.714286
-Iteration 10, loss = 0.64776479
-Validation score: 0.714286
-Iteration 11, loss = 0.64202003
-Validation score: 0.738095
-Iteration 12, loss = 0.63689234
-Validation score: 0.666667
-Iteration 13, loss = 0.63251038
-Validation score: 0.666667
-Iteration 14, loss = 0.62966160
-Validation score: 0.714286
-Iteration 15, loss = 0.62113856
-Validation score: 0.595238
-Iteration 16, loss = 0.61904992
-Validation score: 0.619048
-Iteration 17, loss = 0.61522206
-Validation score: 0.642857
-Iteration 18, loss = 0.60516802
-Validation score: 0.738095
-Iteration 19, loss = 0.60195610
-Validation score: 0.738095
-Iteration 20, loss = 0.59953374
-Validation score: 0.714286
-Iteration 21, loss = 0.59092251
-Validation score: 0.642857
-Iteration 22, loss = 0.58535326
-Validation score: 0.714286
-Iteration 23, loss = 0.58124328
-Validation score: 0.642857
-Iteration 24, loss = 0.58447953
-Validation score: 0.690476
-Iteration 25, loss = 0.56930457
-Validation score: 0.714286
+Iteration 5, loss = 0.69266835
+Validation score: 0.523810
+Iteration 6, loss = 0.69305052
+Validation score: 0.523810
+Iteration 7, loss = 0.69390369
+Validation score: 0.523810
+Iteration 8, loss = 0.69430866
+Validation score: 0.523810
+Iteration 9, loss = 0.69394988
+Validation score: 0.523810
+Iteration 10, loss = 0.69360962
+Validation score: 0.523810
+Iteration 11, loss = 0.69330203
+Validation score: 0.523810
+Iteration 12, loss = 0.69293458
+Validation score: 0.523810
+Iteration 13, loss = 0.69276196
+Validation score: 0.523810
+Iteration 14, loss = 0.69274745
+Validation score: 0.523810
+Iteration 15, loss = 0.69275844
+Validation score: 0.523810
+Iteration 16, loss = 0.69275532
+Validation score: 0.523810
+Iteration 17, loss = 0.69300454
+Validation score: 0.523810
+Iteration 18, loss = 0.69286064
+Validation score: 0.523810
+Iteration 19, loss = 0.69269187
+Validation score: 0.523810
+Iteration 20, loss = 0.69261826
+Validation score: 0.523810
+Iteration 21, loss = 0.69268759
+Validation score: 0.523810
+Iteration 22, loss = 0.69259346
+Validation score: 0.523810
+Iteration 23, loss = 0.69277529
+Validation score: 0.523810
+Iteration 24, loss = 0.69253376
+Validation score: 0.523810
+Iteration 25, loss = 0.69275125
+Validation score: 0.523810
+Iteration 26, loss = 0.69250574
+Validation score: 0.523810
 Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
            0        1  Labels
-0    0.50712  0.49288       1
-1    0.49777  0.50223       0
-2    0.48083  0.51917       0
-3    0.50108  0.49892       0
-4    0.50147  0.49853       0
+0    0.51789  0.48211       1
+1    0.51880  0.48120       0
+2    0.51922  0.48078       0
+3    0.52057  0.47943       0
+4    0.51957  0.48043       0
 ..       ...      ...     ...
-99   0.49913  0.50087       0
-100  0.53074  0.46926       1
-101  0.47790  0.52210       1
-102  0.52284  0.47716       0
-103  0.49166  0.50834       1
+99   0.52030  0.47970       0
+100  0.51900  0.48100       1
+101  0.51947  0.48053       1
+102  0.52104  0.47896       0
+103  0.51888  0.48112       1
 
 [104 rows x 3 columns]
- The mean accuracy of this model is: 0.5673076923076923
+ The mean accuracy of this model is: 0.5192307692307693
+{'Beyonce': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Ben_Affleck': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Dave_Franco': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Brad_Pit': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True)}
 Brianna_Cuoco------>Kaley_Cuoco
-Iteration 1, loss = 0.68603369
-Validation score: 0.588235
-Iteration 2, loss = 0.70053944
-Validation score: 0.549020
-Iteration 3, loss = 0.69820005
+Iteration 1, loss = 0.73092053
 Validation score: 0.450980
-Iteration 4, loss = 0.68449477
-Validation score: 0.549020
-Iteration 5, loss = 0.65666524
-Validation score: 0.549020
-Iteration 6, loss = 0.64393111
-Validation score: 0.549020
-Iteration 7, loss = 0.66934303
-Validation score: 0.411765
-Iteration 8, loss = 0.65267849
-Validation score: 0.549020
-Iteration 9, loss = 0.62664718
-Validation score: 0.549020
-Iteration 10, loss = 0.63593985
-Validation score: 0.568627
-Iteration 11, loss = 0.61303844
-Validation score: 0.549020
-Iteration 12, loss = 0.59731367
-Validation score: 0.549020
-Iteration 13, loss = 0.61008394
-Validation score: 0.470588
-Iteration 14, loss = 0.60060237
-Validation score: 0.529412
-Iteration 15, loss = 0.57750292
-Validation score: 0.627451
-Iteration 16, loss = 0.60250616
-Validation score: 0.568627
-Iteration 17, loss = 0.58115657
-Validation score: 0.627451
-Iteration 18, loss = 0.55687424
-Validation score: 0.549020
-Iteration 19, loss = 0.55636759
-Validation score: 0.549020
-Iteration 20, loss = 0.62862071
-Validation score: 0.568627
-Iteration 21, loss = 0.54043400
-Validation score: 0.568627
-Iteration 22, loss = 0.55053146
-Validation score: 0.588235
-Iteration 23, loss = 0.53593169
-Validation score: 0.568627
-Iteration 24, loss = 0.52551130
-Validation score: 0.568627
-Iteration 25, loss = 0.52291123
-Validation score: 0.431373
-Iteration 26, loss = 0.55969702
+Iteration 2, loss = 0.70730669
 Validation score: 0.607843
-Iteration 27, loss = 0.53515950
-Validation score: 0.568627
-Iteration 28, loss = 0.50198075
-Validation score: 0.411765
-Iteration 29, loss = 0.61431904
-Validation score: 0.627451
-Iteration 30, loss = 0.49591614
-Validation score: 0.647059
-Iteration 31, loss = 0.48309528
+Iteration 3, loss = 0.68967638
 Validation score: 0.549020
-Iteration 32, loss = 0.52474555
-Validation score: 0.607843
-Iteration 33, loss = 0.58775901
-Validation score: 0.568627
-Iteration 34, loss = 0.48363830
-Validation score: 0.607843
-Iteration 35, loss = 0.49719996
-Validation score: 0.588235
-Iteration 36, loss = 0.50624954
-Validation score: 0.568627
-Iteration 37, loss = 0.49431966
-Validation score: 0.588235
-Iteration 38, loss = 0.45228530
+Iteration 4, loss = 0.68646417
 Validation score: 0.549020
-Iteration 39, loss = 0.44666331
-Validation score: 0.568627
-Iteration 40, loss = 0.50560727
-Validation score: 0.588235
-Iteration 41, loss = 0.44099102
-Validation score: 0.568627
-Iteration 42, loss = 0.44149168
-Validation score: 0.607843
-Iteration 43, loss = 0.53369719
-Validation score: 0.588235
-Iteration 44, loss = 0.46425905
-Validation score: 0.568627
-Iteration 45, loss = 0.44705334
-Validation score: 0.588235
-Iteration 46, loss = 0.55366456
-Validation score: 0.647059
-Iteration 47, loss = 0.41023398
-Validation score: 0.588235
-Iteration 48, loss = 0.41241535
+Iteration 5, loss = 0.68823533
 Validation score: 0.549020
-Iteration 49, loss = 0.45818587
-Validation score: 0.627451
-Iteration 50, loss = 0.48237079
-Validation score: 0.470588
-Iteration 51, loss = 0.49248029
-Validation score: 0.588235
+Iteration 6, loss = 0.69207808
+Validation score: 0.549020
+Iteration 7, loss = 0.68947868
+Validation score: 0.549020
+Iteration 8, loss = 0.68659963
+Validation score: 0.549020
+Iteration 9, loss = 0.68636027
+Validation score: 0.549020
+Iteration 10, loss = 0.68731375
+Validation score: 0.549020
+Iteration 11, loss = 0.68726812
+Validation score: 0.549020
+Iteration 12, loss = 0.68694703
+Validation score: 0.549020
+Iteration 13, loss = 0.68703893
+Validation score: 0.549020
+Iteration 14, loss = 0.68628788
+Validation score: 0.549020
+Iteration 15, loss = 0.68630769
+Validation score: 0.549020
+Iteration 16, loss = 0.68606189
+Validation score: 0.549020
+Iteration 17, loss = 0.68588201
+Validation score: 0.549020
+Iteration 18, loss = 0.68602891
+Validation score: 0.549020
+Iteration 19, loss = 0.68596299
+Validation score: 0.549020
+Iteration 20, loss = 0.68636163
+Validation score: 0.549020
+Iteration 21, loss = 0.68584197
+Validation score: 0.549020
+Iteration 22, loss = 0.68590740
+Validation score: 0.549020
+Iteration 23, loss = 0.68660335
+Validation score: 0.549020
 Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
            0        1  Labels
-0    0.52527  0.47473       0
-1    0.61321  0.38679       0
-2    0.83675  0.16325       0
-3    0.46017  0.53983       0
-4    0.65310  0.34690       1
+0    0.49911  0.50089       0
+1    0.50101  0.49899       0
+2    0.50255  0.49745       0
+3    0.49968  0.50032       0
+4    0.49925  0.50075       1
 ..       ...      ...     ...
-122  0.46062  0.53938       0
-123  0.61937  0.38063       1
-124  0.52005  0.47995       1
-125  0.33378  0.66622       0
-126  0.54422  0.45578       0
+122  0.50116  0.49884       0
+123  0.49993  0.50007       1
+124  0.49801  0.50199       1
+125  0.50052  0.49948       0
+126  0.50196  0.49804       0
 
 [127 rows x 3 columns]
- The mean accuracy of this model is: 0.7322834645669292
+ The mean accuracy of this model is: 0.5669291338582677
+{'Beyonce': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Ben_Affleck': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Dave_Franco': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Brad_Pit': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Brianna_Cuoco': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True)}
 Haley_Duff------>Hilary
-Iteration 1, loss = 0.70773653
+Iteration 1, loss = 0.69784807
 Validation score: 0.457627
-Iteration 2, loss = 0.72652570
-Validation score: 0.694915
-Iteration 3, loss = 0.67431886
-Validation score: 0.440678
-Iteration 4, loss = 0.68176965
-Validation score: 0.711864
-Iteration 5, loss = 0.65094008
-Validation score: 0.677966
-Iteration 6, loss = 0.66130178
-Validation score: 0.457627
-Iteration 7, loss = 0.66823233
-Validation score: 0.627119
-Iteration 8, loss = 0.64761707
-Validation score: 0.711864
-Iteration 9, loss = 0.63502165
-Validation score: 0.627119
-Iteration 10, loss = 0.61646806
-Validation score: 0.610169
-Iteration 11, loss = 0.60506975
-Validation score: 0.711864
-Iteration 12, loss = 0.60378038
-Validation score: 0.508475
-Iteration 13, loss = 0.61195514
-Validation score: 0.728814
-Iteration 14, loss = 0.58473682
-Validation score: 0.661017
-Iteration 15, loss = 0.58281752
+Iteration 2, loss = 0.69282599
 Validation score: 0.542373
-Iteration 16, loss = 0.63498039
-Validation score: 0.728814
-Iteration 17, loss = 0.56879791
-Validation score: 0.728814
-Iteration 18, loss = 0.58320915
+Iteration 3, loss = 0.68981585
 Validation score: 0.542373
-Iteration 19, loss = 0.59437730
-Validation score: 0.711864
-Iteration 20, loss = 0.58912732
-Validation score: 0.627119
-Iteration 21, loss = 0.54874545
-Validation score: 0.677966
-Iteration 22, loss = 0.54822953
-Validation score: 0.694915
-Iteration 23, loss = 0.55402869
-Validation score: 0.711864
-Iteration 24, loss = 0.55608140
-Validation score: 0.593220
-Iteration 25, loss = 0.54358571
-Validation score: 0.711864
-Iteration 26, loss = 0.53782505
-Validation score: 0.694915
-Iteration 27, loss = 0.51333937
-Validation score: 0.677966
-Iteration 28, loss = 0.56875468
-Validation score: 0.576271
-Iteration 29, loss = 0.52497266
-Validation score: 0.711864
-Iteration 30, loss = 0.49724618
-Validation score: 0.711864
-Iteration 31, loss = 0.49289952
-Validation score: 0.745763
-Iteration 32, loss = 0.49442506
-Validation score: 0.677966
-Iteration 33, loss = 0.54359691
-Validation score: 0.525424
-Iteration 34, loss = 0.56375939
-Validation score: 0.745763
-Iteration 35, loss = 0.48660243
-Validation score: 0.694915
-Iteration 36, loss = 0.51304789
-Validation score: 0.677966
-Iteration 37, loss = 0.51523977
-Validation score: 0.576271
-Iteration 38, loss = 0.54254906
-Validation score: 0.728814
-Iteration 39, loss = 0.46110244
-Validation score: 0.728814
-Iteration 40, loss = 0.46890959
-Validation score: 0.576271
-Iteration 41, loss = 0.56883242
-Validation score: 0.711864
-Iteration 42, loss = 0.46065984
-Validation score: 0.728814
-Iteration 43, loss = 0.44196288
-Validation score: 0.627119
-Iteration 44, loss = 0.53144501
-Validation score: 0.559322
-Iteration 45, loss = 0.46324231
-Validation score: 0.711864
-Iteration 46, loss = 0.46046700
-Validation score: 0.677966
-Iteration 47, loss = 0.47935348
-Validation score: 0.677966
-Iteration 48, loss = 0.47442455
-Validation score: 0.728814
-Iteration 49, loss = 0.44889246
-Validation score: 0.576271
-Iteration 50, loss = 0.47499082
-Validation score: 0.728814
-Iteration 51, loss = 0.41167728
-Validation score: 0.711864
-Iteration 52, loss = 0.40638951
-Validation score: 0.694915
+Iteration 4, loss = 0.68931098
+Validation score: 0.542373
+Iteration 5, loss = 0.68904708
+Validation score: 0.542373
+Iteration 6, loss = 0.68907310
+Validation score: 0.542373
+Iteration 7, loss = 0.68859526
+Validation score: 0.542373
+Iteration 8, loss = 0.68842959
+Validation score: 0.542373
+Iteration 9, loss = 0.68838200
+Validation score: 0.542373
+Iteration 10, loss = 0.68843505
+Validation score: 0.542373
+Iteration 11, loss = 0.68843940
+Validation score: 0.542373
+Iteration 12, loss = 0.68854052
+Validation score: 0.542373
+Iteration 13, loss = 0.68846808
+Validation score: 0.542373
+Iteration 14, loss = 0.68814122
+Validation score: 0.542373
+Iteration 15, loss = 0.68810357
+Validation score: 0.542373
+Iteration 16, loss = 0.68807228
+Validation score: 0.542373
+Iteration 17, loss = 0.68822050
+Validation score: 0.542373
+Iteration 18, loss = 0.68835224
+Validation score: 0.542373
+Iteration 19, loss = 0.68805488
+Validation score: 0.542373
+Iteration 20, loss = 0.68789657
+Validation score: 0.542373
+Iteration 21, loss = 0.68810667
+Validation score: 0.542373
+Iteration 22, loss = 0.68788686
+Validation score: 0.542373
+Iteration 23, loss = 0.68791354
+Validation score: 0.542373
 Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
            0        1  Labels
-0    0.48799  0.51201       1
-1    0.52565  0.47435       1
-2    0.73578  0.26422       0
-3    0.74004  0.25996       1
-4    0.62649  0.37351       0
+0    0.52183  0.47817       1
+1    0.52273  0.47727       1
+2    0.52291  0.47709       0
+3    0.52088  0.47912       1
+4    0.52449  0.47551       0
 ..       ...      ...     ...
-141  0.78809  0.21191       0
-142  0.55616  0.44384       0
-143  0.19605  0.80395       1
-144  0.52506  0.47494       1
-145  0.74387  0.25613       0
+141  0.52314  0.47686       0
+142  0.52170  0.47830       0
+143  0.52131  0.47869       1
+144  0.52137  0.47863       1
+145  0.52277  0.47723       0
 
 [146 rows x 3 columns]
- The mean accuracy of this model is: 0.5821917808219178
+ The mean accuracy of this model is: 0.4589041095890411
+{'Beyonce': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Ben_Affleck': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Dave_Franco': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Brad_Pit': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Brianna_Cuoco': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Haley_Duff': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True)}
 Zooey_Deschanel------>Katy_Perry
-Iteration 1, loss = 0.70399369
-Validation score: 0.476190
-Iteration 2, loss = 0.68656927
-Validation score: 0.587302
-Iteration 3, loss = 0.69238150
-Validation score: 0.571429
-Iteration 4, loss = 0.67215439
-Validation score: 0.571429
-Iteration 5, loss = 0.64839846
-Validation score: 0.650794
-Iteration 6, loss = 0.63803151
-Validation score: 0.603175
-Iteration 7, loss = 0.63028949
-Validation score: 0.634921
-Iteration 8, loss = 0.62739893
-Validation score: 0.603175
-Iteration 9, loss = 0.61672327
-Validation score: 0.666667
-Iteration 10, loss = 0.61309189
-Validation score: 0.650794
-Iteration 11, loss = 0.61817796
-Validation score: 0.603175
-Iteration 12, loss = 0.60041437
-Validation score: 0.619048
-Iteration 13, loss = 0.60540672
-Validation score: 0.571429
-Iteration 14, loss = 0.59762019
-Validation score: 0.603175
-Iteration 15, loss = 0.59007028
-Validation score: 0.571429
-Iteration 16, loss = 0.60025015
-Validation score: 0.634921
-Iteration 17, loss = 0.58154149
-Validation score: 0.619048
-Iteration 18, loss = 0.56220202
-Validation score: 0.619048
-Iteration 19, loss = 0.57899839
-Validation score: 0.587302
-Iteration 20, loss = 0.56030020
-Validation score: 0.619048
-Iteration 21, loss = 0.58413143
-Validation score: 0.650794
-Iteration 22, loss = 0.56188486
-Validation score: 0.603175
-Iteration 23, loss = 0.59755508
-Validation score: 0.603175
-Iteration 24, loss = 0.56012431
-Validation score: 0.619048
-Iteration 25, loss = 0.53197903
-Validation score: 0.650794
-Iteration 26, loss = 0.52169187
-Validation score: 0.603175
-Iteration 27, loss = 0.54158056
-Validation score: 0.492063
-Iteration 28, loss = 0.65892702
-Validation score: 0.682540
-Iteration 29, loss = 0.52597827
-Validation score: 0.603175
-Iteration 30, loss = 0.52288886
-Validation score: 0.666667
-Iteration 31, loss = 0.49940213
-Validation score: 0.650794
-Iteration 32, loss = 0.49957368
-Validation score: 0.666667
-Iteration 33, loss = 0.48742680
-Validation score: 0.650794
-Iteration 34, loss = 0.48962356
-Validation score: 0.603175
-Iteration 35, loss = 0.59736874
-Validation score: 0.619048
-Iteration 36, loss = 0.48724159
-Validation score: 0.619048
-Iteration 37, loss = 0.49108792
-Validation score: 0.587302
-Iteration 38, loss = 0.53420118
-Validation score: 0.587302
-Iteration 39, loss = 0.49674908
-Validation score: 0.619048
-Iteration 40, loss = 0.45995340
-Validation score: 0.650794
-Iteration 41, loss = 0.45747175
-Validation score: 0.682540
-Iteration 42, loss = 0.50333652
-Validation score: 0.571429
-Iteration 43, loss = 0.57988452
-Validation score: 0.650794
-Iteration 44, loss = 0.46764233
-Validation score: 0.666667
-Iteration 45, loss = 0.47321838
-Validation score: 0.634921
-Iteration 46, loss = 0.48689870
-Validation score: 0.619048
-Iteration 47, loss = 0.44736451
-Validation score: 0.650794
-Iteration 48, loss = 0.46543335
-Validation score: 0.666667
-Iteration 49, loss = 0.43170509
-Validation score: 0.698413
-Iteration 50, loss = 0.44267059
-Validation score: 0.619048
-Iteration 51, loss = 0.56310097
-Validation score: 0.571429
-Iteration 52, loss = 0.46819207
-Validation score: 0.682540
-Iteration 53, loss = 0.44069384
-Validation score: 0.634921
-Iteration 54, loss = 0.41441931
-Validation score: 0.666667
-Iteration 55, loss = 0.42143111
-Validation score: 0.666667
-Iteration 56, loss = 0.40996120
-Validation score: 0.619048
-Iteration 57, loss = 0.45698750
-Validation score: 0.571429
-Iteration 58, loss = 0.45056494
-Validation score: 0.666667
-Iteration 59, loss = 0.39842867
-Validation score: 0.619048
-Iteration 60, loss = 0.39460168
-Validation score: 0.555556
-Iteration 61, loss = 0.51504930
-Validation score: 0.682540
-Iteration 62, loss = 0.38683219
-Validation score: 0.634921
-Iteration 63, loss = 0.38296963
-Validation score: 0.603175
-Iteration 64, loss = 0.39788811
-Validation score: 0.650794
-Iteration 65, loss = 0.39738949
-Validation score: 0.682540
-Iteration 66, loss = 0.36544144
-Validation score: 0.603175
-Iteration 67, loss = 0.37772382
-Validation score: 0.571429
-Iteration 68, loss = 0.48982894
-Validation score: 0.603175
-Iteration 69, loss = 0.46234434
-Validation score: 0.682540
-Iteration 70, loss = 0.39861352
-Validation score: 0.603175
+Iteration 1, loss = 0.69152293
+Validation score: 0.523810
+Iteration 2, loss = 0.69119213
+Validation score: 0.523810
+Iteration 3, loss = 0.69129581
+Validation score: 0.523810
+Iteration 4, loss = 0.69118895
+Validation score: 0.523810
+Iteration 5, loss = 0.69116839
+Validation score: 0.523810
+Iteration 6, loss = 0.69126412
+Validation score: 0.523810
+Iteration 7, loss = 0.69120521
+Validation score: 0.523810
+Iteration 8, loss = 0.69128050
+Validation score: 0.523810
+Iteration 9, loss = 0.69097595
+Validation score: 0.523810
+Iteration 10, loss = 0.69179295
+Validation score: 0.523810
+Iteration 11, loss = 0.69093056
+Validation score: 0.523810
+Iteration 12, loss = 0.69088838
+Validation score: 0.523810
+Iteration 13, loss = 0.69081619
+Validation score: 0.523810
+Iteration 14, loss = 0.69165130
+Validation score: 0.523810
+Iteration 15, loss = 0.69077593
+Validation score: 0.523810
+Iteration 16, loss = 0.69076255
+Validation score: 0.523810
+Iteration 17, loss = 0.69067374
+Validation score: 0.523810
+Iteration 18, loss = 0.69060300
+Validation score: 0.523810
+Iteration 19, loss = 0.69061084
+Validation score: 0.523810
+Iteration 20, loss = 0.69050358
+Validation score: 0.523810
+Iteration 21, loss = 0.69066686
+Validation score: 0.523810
+Iteration 22, loss = 0.69038524
+Validation score: 0.523810
 Validation score did not improve more than tol=0.000100 for 20 consecutive epochs. Stopping.
            0        1  Labels
-0    0.73759  0.26241       0
-1    0.62422  0.37578       0
-2    0.72040  0.27960       0
-3    0.88440  0.11560       0
-4    0.91947  0.08053       0
+0    0.53270  0.46730       0
+1    0.53385  0.46615       0
+2    0.53316  0.46684       0
+3    0.53319  0.46681       0
+4    0.53279  0.46721       0
 ..       ...      ...     ...
-153  0.39902  0.60098       1
-154  0.65034  0.34966       0
-155  0.69680  0.30320       0
-156  0.93256  0.06744       0
-157  0.70373  0.29627       0
+153  0.53364  0.46636       1
+154  0.53261  0.46739       0
+155  0.53227  0.46773       0
+156  0.53505  0.46495       0
+157  0.53483  0.46517       0
 
 [158 rows x 3 columns]
- The mean accuracy of this model is: 0.6962025316455697
+ The mean accuracy of this model is: 0.5189873417721519
+{'Beyonce': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Ben_Affleck': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Dave_Franco': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Brad_Pit': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Brianna_Cuoco': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Haley_Duff': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True), 'Zooey_Deschanel': MLPClassifier(activation='logistic', alpha=1e-05, early_stopping=True,
+              hidden_layer_sizes=(512, 512), n_iter_no_change=20, solver='sgd',
+              verbose=True)}

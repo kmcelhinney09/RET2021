@@ -43,12 +43,13 @@ def main():
             sg.FolderBrowse(),
         ],
         [
+            sg.Button("Previous"),
             sg.Button("Delete"),
             sg.Button("Next")
         ]
     ]
 
-    window = sg.Window("Image Viewer", elements, size=(500, 475))
+    window = sg.Window("Image Viewer", elements, size=(800, 800))
     images = []
     location = 0
 
@@ -72,6 +73,12 @@ def main():
         if event == "Delete" and images:
             os.remove(images[location])
             location += 1
+            load_image(images[location], window)
+        if event == "Previous" and images:
+            if location == 0:
+                location = len(images) - 1
+            else:
+                location -= 1
             load_image(images[location], window)
 
     window.close()

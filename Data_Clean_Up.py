@@ -82,6 +82,7 @@ def main():
     window.bind('<Right>','Next')
     window.bind('<Left>', 'Previous')
     window.bind('<Delete>','Delete')
+    window.bind('<Down>','Delete')
     images = []
     location = 0
 

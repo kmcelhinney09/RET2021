@@ -6,7 +6,6 @@ from PIL import Image, ImageTk
 
 images_to_clean = []
 
-
 def splitall(path):
     allparts = []
     while 1:
@@ -78,8 +77,12 @@ def main():
     ]
 
     window = sg.Window("Image Viewer", elements, size=(800, 800), element_justification='c')
+
     images = []
     location = 0
+    # The event listener will be running in this block
+
+
 
     while True:
         event, values = window.read()
@@ -100,7 +103,8 @@ def main():
             load_image(images[location], window)
         if event == "Delete" and images:
             os.remove(images[location])
-            location += 1
+            del images[location]
+            #location += 1
             load_image(images[location], window)
         if event == "Previous" and images:
             if location == 0:

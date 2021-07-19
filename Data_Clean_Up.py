@@ -5,6 +5,7 @@ import os
 from PIL import Image, ImageTk
 
 images_to_clean = []
+location = 0
 
 def splitall(path):
     allparts = []
@@ -53,6 +54,7 @@ def load_image(path, window):
 
 
 def main():
+    global location
     elements = [
         [sg.Text(size=(100, 1), key="-Output-")],
         [sg.Image(key="image")],
@@ -71,15 +73,18 @@ def main():
         ],
         [
             sg.Input(size=(25, 1), enable_events=True, key="directory_complete"),
-            sg.Button("Set File Path", key="Path"), sg.Button("Done")
+            sg.Button("Set File Path", key="Path"), sg.Button("Move File",key="Done")
 
         ]
     ]
 
-    window = sg.Window("Image Viewer", elements, size=(800, 800), element_justification='c')
-
+    window = sg.Window("Image Viewer", elements, size=(800, 800), element_justification='c', finalize=True)
+    window.bind('<Right>','Next')
+    window.bind('<Left>', 'Previous')
+    window.bind('<Delete>','Delete')
     images = []
     location = 0
+
     # The event listener will be running in this block
 
 
@@ -95,7 +100,7 @@ def main():
                     images = parse_folder(dir)
                     if images:
                         load_image(images[0], window)
-        if event == "Next" and images:
+        if event == "Next"  and images :
             if location == len(images) - 1:
                 location = 0
             else:
@@ -104,7 +109,6 @@ def main():
         if event == "Delete" and images:
             os.remove(images[location])
             del images[location]
-            #location += 1
             load_image(images[location], window)
         if event == "Previous" and images:
             if location == 0:
@@ -128,8 +132,12 @@ def main():
                 os.makedirs(completed_path)
             rename_folder = os.path.join(completed_path, celeb_folder)
             os.rename(folder_path, rename_folder)
-
-    window.close()
+        if event == 'Next_image':
+            if location == len(images) - 1:
+                location = 0
+            else:
+                location += 1
+            load_image(images[location], window)
 
 
 if __name__ == "__main__":

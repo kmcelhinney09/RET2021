@@ -9,7 +9,7 @@ import csv
 
 celeb_classifiers = {}
 def Get_Image_folders(celeb_one,celeb_two):
-    file_path = 'First5_all_numpy'
+    file_path = 'image_numpy'
     files = os.listdir(file_path)
     if celeb_one in files:
         celeb_one_data = os.path.join(file_path,celeb_one)
@@ -32,11 +32,15 @@ with open('doppelgangers.csv') as csv_file:
         celeb_one = row[0]
         celeb_two = row[1].strip()
         celeb_one_data, celeb_two_data = Get_Image_folders(celeb_one,celeb_two)
-        if celeb_one_data != None:
+        if celeb_one_data != None and celeb_two_data != None:
             file_1 = os.listdir(celeb_one_data)
             file_2 = os.listdir(celeb_two_data)
         else:
+            with open("None_Numpy","a") as file:
+                to_write = celeb_one + ",-------->, " + celeb_two + "\n"
+                file.write(to_write)
             continue
+
 
         celeb_data = []
         celeb_labels = []
@@ -81,9 +85,12 @@ with open('doppelgangers.csv') as csv_file:
         print("{}------>{}".format(celeb_one_name, celeb_two_name))
         clf.fit(x_train, y_train)
         score = clf.score(x_test, y_test)
-        if (score - .5)>0:
-            print("You look more like {} then {}".format(celeb_one_name,celeb_two_name))
-        print(" The mean accuracy of this model is: {}".format(score))
+        with open("Accuracy Output",'a') as file:
+            write1 = "{}------>{} \n".format(celeb_one_name, celeb_two_name)
+            write2 = " The mean accuracy of this model is: {} \n".format(score)
+            file.write(write1)
+            file.write(write2)
+
         celeb_classifiers[celeb_one_name, celeb_two_name] = clf
 
 # print(celeb_classifiers)

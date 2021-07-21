@@ -29,13 +29,13 @@ mtcnn = MTCNN(image_size=160, margin=0, min_face_size=20)
 
 # Uncropped root is the location of the unprocessed input images. The computer expects the images to be in directory
 #      according to the identity which the belong to
-uncropped_root = "./First5/"
+uncropped_root = "./downloads/"
 
 # Cropped root is the location that you wish to save the cropped images of each identity
-cropped_root = "./First5_cropped/"
+cropped_root = "./cropped_images/"
 
 # Pickled root is the location that you wish to save the processed representations of the input images
-numpy_root = "./First5_numpy_not_pickled/"
+numpy_root = "./image_numpy/"
 
 # Create directories for output directories if they do not exist
 if not os.path.exists(cropped_root):
@@ -44,7 +44,7 @@ if not os.path.exists(numpy_root):
     os.makedirs(numpy_root)
 
 # Identities list is a list of all the identity names found in the uncropped root folder
-identities_list = os.listdir(uncropped_root)
+identities_list = sorted(os.listdir(uncropped_root))
 
 # Identity dict is where all of the output file paths are saved
 identity_dict = {}
@@ -65,10 +65,10 @@ for index, identity in enumerate(identities_list):
 
     # Create lists in the identity dictionary for each of the important file paths
     identity_dict[identity] = {"uncropped_path": [], "cropped_path": [], "pickle_path": []}
-    
+    print(identity)
     # Iterate through each image for each identity
     for file in tqdm(os.listdir(uncropped_root+identity)):
-        
+
         # Append the pertinent file paths to each list 
         identity_dict[identity]["uncropped_path"].append(uncropped_root+identity+'/'+file)
         identity_dict[identity]["cropped_path"].append(cropped_root+identity+'/'+file)
@@ -82,6 +82,8 @@ for index, identity in enumerate(identities_list):
 
         # Alternatively crop the image without saving the file        
         image_cropped = mtcnn(image)
+        if image_cropped == None:
+            continue
 
         # Get the processed representation for the image
         image_representation = resnet(image_cropped.unsqueeze(0)).detach().cpu()
@@ -96,7 +98,7 @@ for index, identity in enumerate(identities_list):
         # representations.append(image_representation_flat.tolist())
 
         # Append the "class" or identity label for plotting
-        classes.append(index)
+        # classes.append(index)
 
         # Append a flattened version of the cropped input image for plotting
         # images.append(np.array(image_cropped).flatten())

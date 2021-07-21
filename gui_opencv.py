@@ -225,6 +225,19 @@ celebdict = {"Abigail Spencer": "lookslike/abigailspencer.png", "Alan Cumming": 
 def main():
     sg.theme('BrownBlue')
 
+    def random_celeb():
+        from numpy import random
+        x = random.randint(100)
+        print(x)
+        print(list(celebdict)[x])
+        values = list(celebdict.values())
+        print(values[x])
+
+
+        im = cv2.imread("image")  # Read image
+        ims = cv2.resize(im, (450, 220))
+        window['image'].update(filename=values[x])
+
     # define the window layout
     videofeed = [[sg.Text('OpenCV Demo', size=(40, 1), justification='center', font='Helvetica 20')],
                  [sg.Image(filename='', key='video'), sg.Image(filename='', key='snap')],
@@ -232,7 +245,7 @@ def main():
                   sg.Button('Exit', size=(10, 1), font='Helvetica 14'), ]]
     message = [
         [sg.Text('You looklike', size=(40, 1), justification='center', font='Helvetica 20')],
-        [sg.Image(filename=fname, key='image')]
+        [sg.Image(filename='lookslike/tomhardy.png', key='image')]
     ]
     layout = [
         [
@@ -267,6 +280,7 @@ def main():
             frame = cv2.resize(frame, (300, 250), interpolation=cv2.INTER_AREA)
             cv2.imwrite('snapshot.png', frame)
             window['snap'].update(filename='snapshot.png')
+            random_celeb()
 
         if recording:
             ret, frame = cap.read()

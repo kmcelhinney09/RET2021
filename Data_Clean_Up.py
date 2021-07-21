@@ -50,7 +50,7 @@ def load_image(path, window):
 
         window["-Output-"].update(file_name)
     except:
-        print(f"Unable to open {path}!")
+        print(f"Unable to open {path}")
 
 
 def main():
@@ -129,6 +129,7 @@ def main():
             folder_path = os.path.join(os.path.join(top_dir, path_list[-3]), celeb_folder)
             # make completed folder
             completed_path = os.path.join(top_dir, completed_folder)
+            # print(completed_path)
             if not os.path.exists(completed_path):
                 os.makedirs(completed_path)
             rename_folder = os.path.join(completed_path, celeb_folder)

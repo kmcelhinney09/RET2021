@@ -288,14 +288,14 @@ def main():
                  [sg.Button('Snap', size=(10, 1), font='Any 14'),
                   sg.Button('Exit', size=(10, 1), font='Helvetica 14'), ]]
     message = [
-        [sg.Text('You looklike', size=(40, 1), justification='center', font='Helvetica 20')],
+        [sg.Text('You looklike', size=(20, 1), justification='center', font='Helvetica 20')],
         [sg.Image(filename='lookslike/tomhardy.png', key='image')],
-        [sg.Text('', key='celebname', size=(40, 1), justification='center', font='Helvetica 20')]
+        [sg.Text('', key='celebname', size=(20, 1), justification='center', font='Helvetica 20')]
     ]
     #######third colum box
     third = [
-        [sg.Text('Probability', size=(40, 1), justification='center', font='Helvetica 20')],
-        [sg.Multiline(default_text='', size=(55, 33), key='probabilitylist')],
+        [sg.Text('Probability', size=(20, 1), justification='center', font='Helvetica 20')],
+        [sg.Multiline(default_text='', size=(35, 33), key='probabilitylist')],
 
     ]
 

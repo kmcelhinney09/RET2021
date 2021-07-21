@@ -1,22 +1,12 @@
 import PySimpleGUI as sg
 import cv2
 import numpy as np
+import os
 
 """
 Demo program that displays a webcam using OpenCV
 """
-testdict = {
-    "Ben Affleck": "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/benaffleck.png",
-    "Beyonce": "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/beyonce.png",
-    "Brianna Cuoco": "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/briannacuoco.png",
-    "Casey Affleck": "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/caseyaffleck.png",
-    "Dave Franco": "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/davefranco.png",
-    "Haley Duff": "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/haleyduff.png",
-    "Hilary": "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/hilary.png",
-    "James Franco": "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/jamesfranco.png",
-    "Kaley Cuoco": "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/kaleycuoco.png",
-    "Solange": "/home/teacheraccount/PycharmProjects/perceptron1/lookslike/solange.png",
-}
+
 celebdict = {"Abigail Spencer": "lookslike/abigailspencer.png", "Alan Cumming": "lookslike/alancumming.png",
              "Alec Baldwin": "lookslike/alecbaldwin.png", "Alex Newell": "lookslike/alexnewell.png",
              "Alexa davalos": "lookslike/alexadavalos.png", "Aliana Lohan": "lookslike/alianalohan.png",
@@ -232,11 +222,15 @@ def main():
         print(list(celebdict)[x])
         values = list(celebdict.values())
         print(values[x])
+        if os.path.exists(values[x]):
+            celebnames = list(celebdict)
 
-
-        im = cv2.imread("image")  # Read image
-        ims = cv2.resize(im, (450, 220))
-        window['image'].update(filename=values[x])
+            # im = cv2.imread("image")  # Read image
+            # ims = cv2.resize(im, (450, 220))
+            window['image'].update(filename=values[x])
+            window['probabilitylist'].update(celebnames[x])
+        else:
+            return
 
     # define the window layout
     videofeed = [[sg.Text('OpenCV Demo', size=(40, 1), justification='center', font='Helvetica 20')],
@@ -247,12 +241,25 @@ def main():
         [sg.Text('You looklike', size=(40, 1), justification='center', font='Helvetica 20')],
         [sg.Image(filename='lookslike/tomhardy.png', key='image')]
     ]
+    #######third colum box
+    third= [
+        [sg.Text('Probability', size=(40, 1), justification='center', font='Helvetica 20')],
+        [sg.Multiline(default_text='', size=(55, 33),key='probabilitylist')],
+
+   ]
+
+
+    #third column box#########
+
 
     layout = [
         [
             sg.Column(videofeed, element_justification="c"),
             sg.VSeperator(),
             sg.Column(message, element_justification="c"),
+            sg.VSeperator(),
+            sg.Column(third, element_justification="c") ######## this is the third column
+
         ]
     ]
     # create the window and show it without the plot
@@ -277,11 +284,12 @@ def main():
 
         elif event == 'Snap':
             # recording = False
-            ret, frame = cap.read()
-            frame = cv2.resize(frame, (300, 250), interpolation=cv2.INTER_AREA)
-            cv2.imwrite('snapshot.png', frame)
-            window['snap'].update(filename='snapshot.png')
+            # ret, frame = cap.read()
+            # frame = cv2.resize(frame, (300, 250), interpolation=cv2.INTER_AREA)
+            # cv2.imwrite('snapshot.png', frame)
+            # window['snap'].update(filename='snapshot.png') ####### add this to third column to update text######
             random_celeb()
+
 
         # if recording:
         #     ret, frame = cap.read()

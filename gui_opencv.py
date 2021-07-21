@@ -247,6 +247,7 @@ def main():
         [sg.Text('You looklike', size=(40, 1), justification='center', font='Helvetica 20')],
         [sg.Image(filename='lookslike/tomhardy.png', key='image')]
     ]
+
     layout = [
         [
             sg.Column(videofeed, element_justification="c"),
@@ -282,11 +283,11 @@ def main():
             window['snap'].update(filename='snapshot.png')
             random_celeb()
 
-        if recording:
-            ret, frame = cap.read()
-            frame = cv2.resize(frame, (300, 250), interpolation=cv2.INTER_AREA)
-            imgbytes = cv2.imencode('.png', frame)[1].tobytes()  # ditto
-            window['video'].update(data=imgbytes)
+        # if recording:
+        #     ret, frame = cap.read()
+        #     frame = cv2.resize(frame, (300, 250), interpolation=cv2.INTER_AREA)
+        #     imgbytes = cv2.imencode('.png', frame)[1].tobytes()  # ditto
+        #     window['video'].update(data=imgbytes)
 
 
 main()

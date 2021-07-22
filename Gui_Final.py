@@ -395,8 +395,7 @@ def image_compare(input_image):
             match_list.append([match[1],proba])
 
         image_match_probability[index][2] = proba
-        print(match)
-        print(celeb_set)
+
         # print(celeb_name,proba)
     match_list = sorted(match_list, key=itemgetter(1), reverse=True)[:15]
     matches_to_send = ''

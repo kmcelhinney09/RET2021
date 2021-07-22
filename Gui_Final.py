@@ -369,20 +369,39 @@ def image_compare(input_image):
 
 
     for name, each_classifier in classifer_dict.items():
-        view_probability = pd.DataFrame(each_classifier.predict_proba(image_representation_flat),
-                                        columns=each_classifier.classes_)
+        name_1 = name[0]
+        name_2 = name[1]
+
         probabilities = each_classifier.predict_proba(image_representation_flat)
-        image_match_probability.append([name[0], probabilities[0][1]])
-    max = 0
+        image_match_probability.append([name_1,name_2, probabilities[0][1]])
+    match_list = []
+    max_prob = 0
     celeb_name = ''
-    for match in image_match_probability:
-        if match[1] > max:
-            max = match[1]
-            celeb_name = match[0]
-    print(celeb_name, max)
-    image_match_probability = sorted(image_match_probability, key=itemgetter(1), reverse=True)[:15]
+    for index, match in enumerate(image_match_probability):
+        if match[2] < .5:
+            proba = 1 - match[2]
+            celeb_set = 2
+        else:
+            proba = match[2]
+            celeb_set = 1
+        if proba > max_prob:
+            max_prob = proba
+            if celeb_set == 1:
+                celeb_name = match[0]
+            else:
+                celeb_name = match[1]
+        if celeb_set == 1:
+            match_list.append([match[0], proba])
+        else:
+            match_list.append([match[1],proba])
+
+        image_match_probability[index][2] = proba
+        print(match)
+        print(celeb_set)
+        # print(celeb_name,proba)
+    match_list = sorted(match_list, key=itemgetter(1), reverse=True)[:15]
     matches_to_send = ''
-    for celeb_match in image_match_probability:
+    for celeb_match in match_list:
         to_append = "You have {:.5f} probability of looking like {}".format(celeb_match[1],celeb_match[0])
         matches_to_send = matches_to_send + to_append + "\n" + "\n"
     return celeb_name, matches_to_send
@@ -443,9 +462,9 @@ def main():
 
         event, values = window.read(timeout=20)
 
-        # ret, frame = cap.read()
-        # video_start = cv2.imencode('.png', frame)[1].tobytes()
-        # window['video'].update(data=video_start)
+        ret, frame = cap.read()
+        video_start = cv2.imencode('.png', frame)[1].tobytes()
+        window['video'].update(data=video_start)
 
         if event == 'Exit' or event == sg.WIN_CLOSED:
             return

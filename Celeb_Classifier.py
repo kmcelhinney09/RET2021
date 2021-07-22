@@ -35,6 +35,10 @@ with open('doppelgangers.csv') as csv_file:
         if celeb_one_data != None and celeb_two_data != None:
             file_1 = os.listdir(celeb_one_data)
             file_2 = os.listdir(celeb_two_data)
+            with open("Working_doppelganger_list","a") as file:
+                to_write = celeb_one + ",-------->, " + celeb_two + "\n"
+                file.write(to_write)
+
         else:
             with open("None_Numpy","a") as file:
                 to_write = celeb_one + ",-------->, " + celeb_two + "\n"

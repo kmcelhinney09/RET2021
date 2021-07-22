@@ -8,7 +8,6 @@ import pickle as pkl
 # To use this code you are required to run the following command in the terminal in your conda environment:
 # pip install facenet-pytorch
 
-
 # Initiate the deep learning models
 # Resnet is the model actually used for getting new representations of the input images
 resnet = InceptionResnetV1(pretrained='vggface2').eval()

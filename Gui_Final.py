@@ -1,6 +1,5 @@
 import PySimpleGUI as sg
 import cv2
-import random
 from facenet_pytorch import MTCNN, InceptionResnetV1
 from PIL import Image
 import pandas as pd

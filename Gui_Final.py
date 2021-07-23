@@ -17,7 +17,6 @@ resnet.classify = True
 # Mtcnn is used for identifying where the face is in the input image and cropping the image
 mtcnn = MTCNN(image_size=160, margin=0, min_face_size=20)
 
-
 celebdict = {'Abigail Spencer': 'lookslike/abigailspencer.png',
              'Alan Cummings': 'lookslike/alancummings.png',
              'Alec Baldwin': 'lookslike/alecbaldwin.png',
@@ -352,7 +351,8 @@ pickle_file = open("ClassiferPickel", 'rb')
 classifer_dict = pkl.load(pickle_file)
 pickle_file.close()
 
-def image_compare(input_image):
+
+def image_compare(input_image, window):
     image_match_probability = []
 
     image = Image.open(input_image)
@@ -360,21 +360,21 @@ def image_compare(input_image):
     image_cropped = mtcnn(image, save_path="./snapshot_crop.png")
 
     # Get the processed representation for the image
-    image_representation = resnet(image_cropped.unsqueeze(0)).detach().cpu()
+    try:
+        image_representation = resnet(image_cropped.unsqueeze(0)).detach().cpu()
 
-    # Flatten the representation and convert it to a numpy array for saving
-    image_representation_flat = image_representation.squeeze().numpy()
-    image_representation_flat = image_representation_flat.reshape(1, -1)
-
-
-
+        # Flatten the representation and convert it to a numpy array for saving
+        image_representation_flat = image_representation.squeeze().numpy()
+        image_representation_flat = image_representation_flat.reshape(1, -1)
+    except:
+        return (None, None)
 
     for name, each_classifier in classifer_dict.items():
         name_1 = name[0]
         name_2 = name[1]
 
         probabilities = each_classifier.predict_proba(image_representation_flat)
-        image_match_probability.append([name_1,name_2, probabilities[0][1]])
+        image_match_probability.append([name_1, name_2, probabilities[0][1]])
     match_list = []
     max_prob = 0
     celeb_name = ''
@@ -394,7 +394,7 @@ def image_compare(input_image):
         if celeb_set == 1:
             match_list.append([match[0], proba])
         else:
-            match_list.append([match[1],proba])
+            match_list.append([match[1], proba])
 
         image_match_probability[index][2] = proba
 
@@ -402,32 +402,31 @@ def image_compare(input_image):
     match_list = sorted(match_list, key=itemgetter(1), reverse=True)[:15]
     matches_to_send = ''
     for celeb_match in match_list:
-        to_append = "You have {:.5f} probability of looking like {}".format(celeb_match[1],celeb_match[0])
+        to_append = "You have {:.5f} probability of looking like {}".format(celeb_match[1], celeb_match[0])
         matches_to_send = matches_to_send + to_append + "\n" + "\n"
     return celeb_name, matches_to_send
 
-def celeb_image_match (window, celeb_name_prediction, match_probabilites):
 
+def celeb_image_match(window, celeb_name_prediction, match_probabilites):
     window['snapshot'].update(filename="snapshot_crop.png")
     window['image'].update(filename=celebdict[celeb_name_prediction])
-    window['celebname'].update(celeb_name_prediction)
+    window['celebname'].update(celeb_name_prediction,font='Helvetica 20')
     window['probabilitylist'].update(match_probabilites)
-
 
 
 def main():
     sg.theme('BrownBlue')
 
-
     # define the window layout
     videofeed = [[sg.Text('OpenCV Demo', size=(40, 1), justification='center', font='Helvetica 20')],
                  [sg.Image(filename='', key='video'), sg.Image(filename='', key='snapshot')],
                  [sg.Button('Snap', size=(10, 1), font='Any 14'),
-                  sg.Button('Exit', size=(10, 1), font='Helvetica 14'), ]]
+                  sg.Button('Clear', size=(10,1), font='Any 14'),
+                  sg.Button('Exit', size=(10, 1), font='Any 14'), ]]
     message = [
         [sg.Text('You looklike', size=(20, 1), justification='center', font='Helvetica 20')],
         [sg.Image(filename='', key='image')],
-        [sg.Text('', key='celebname', size=(20, 1), justification='center', font='Helvetica 20')]
+        [sg.Text('', key='celebname', size=(30, 1), justification='center', font='Helvetica 20')]
     ]
     #######third colum box
     third = [
@@ -454,7 +453,6 @@ def main():
     window.bind('<s>', 'Snap')
     window.bind('<e>', 'Exit')
 
-
     recording = False
     cap = cv2.VideoCapture(0)
     recording = True
@@ -475,15 +473,26 @@ def main():
             frame = cv2.resize(frame, (300, 250), interpolation=cv2.INTER_AREA)
             cv2.imwrite('snapshot.png', frame)
             window['snapshot'].update(filename='snapshot.png')
+            window['image'].update(filename='')
 
-            celeb_name_prediction, match_probabilities = image_compare('snapshot.png')
-            celeb_image_match(window,celeb_name_prediction,match_probabilities)
+            celeb_name_prediction, match_probabilities = image_compare('snapshot.png', window)
+            if celeb_name_prediction == None:
+                window['celebname'].update("Snap must be of a face",font='Helvetica 10')
+                window['image'].update(filename='')
+            else:
+                celeb_image_match(window, celeb_name_prediction, match_probabilities)
+        elif event == "Clear":
+            window['celebname'].update('')
+            window['image'].update(filename='')
+            window['snapshot'].update(filename='')
+            window['probabilitylist'].update('')
 
         if recording:
             ret, frame = cap.read()
             frame = cv2.resize(frame, (300, 250), interpolation=cv2.INTER_AREA)
             imgbytes = cv2.imencode('.png', frame)[1].tobytes()  # ditto
             window['video'].update(data=imgbytes)
+
 
 
 main()

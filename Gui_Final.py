@@ -2,7 +2,6 @@ import PySimpleGUI as sg
 import cv2
 from facenet_pytorch import MTCNN, InceptionResnetV1
 from PIL import Image
-import pandas as pd
 from operator import itemgetter
 import pickle as pkl
 
@@ -82,6 +81,7 @@ celebdict = {'Abigail Spencer': 'lookslike/abigailspencer.png',
              'Chimene Diaz': 'lookslike/chimenediaz.png',
              'Chord Overstreet': 'lookslike/chordoverstreet.png',
              'Chris Hemsworth': 'lookslike/chrishemsworth.png',
+             'Chris O\'Donnell': 'lookslike/chrisodonnell.png',
              'Chrissy Teigen': 'lookslike/chrissyteigen.png',
              'Christian Bale': 'lookslike/christianbale.png',
              'Christopher Knight': 'lookslike/christopherknight.png',
@@ -313,6 +313,7 @@ celebdict = {'Abigail Spencer': 'lookslike/abigailspencer.png',
              'Skylar Astin': 'lookslike/skylarastin.png',
              'Solange': 'lookslike/solange.png',
              'Sophie von Haselberg': 'lookslike/sophievonhaselberg.png',
+             'Stephen Amell': 'lookslike/stephenamell',
              'Stephen Baldwin': 'lookslike/stephenbaldwin.png',
              'Stephen Colbert': 'lookslike/stephencolbert.png',
              'Taylor Lautner': 'lookslike/taylorlautner.png',
@@ -347,6 +348,9 @@ celebdict = {'Abigail Spencer': 'lookslike/abigailspencer.png',
              'constance wu': 'lookslike/constancewu.png',
              'ellen page': 'lookslike/ellenpage.png',
              'emma appleton': 'lookslike/emmaappleton.png'}
+pickle_file = open("ClassiferPickel", 'rb')
+classifer_dict = pkl.load(pickle_file)
+pickle_file.close()
 
 def image_compare(input_image):
     image_match_probability = []
@@ -362,9 +366,7 @@ def image_compare(input_image):
     image_representation_flat = image_representation.squeeze().numpy()
     image_representation_flat = image_representation_flat.reshape(1, -1)
 
-    pickle_file = open("ClassiferPickel", 'rb')
-    classifer_dict = pkl.load(pickle_file)
-    pickle_file.close()
+
 
 
     for name, each_classifier in classifer_dict.items():

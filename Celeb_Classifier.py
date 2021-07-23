@@ -5,13 +5,15 @@ from sklearn.model_selection import train_test_split
 import pickle
 import csv
 
-
+# Try using joblib to save classifers instead of pickle https://mljar.com/blog/save-load-random-forest/
 celeb_classifiers = {}
-def Get_Image_folders(celeb_one,celeb_two):
+
+
+def Get_Image_folders(celeb_one, celeb_two):
     file_path = 'image_numpy'
     files = os.listdir(file_path)
     if celeb_one in files:
-        celeb_one_data = os.path.join(file_path,celeb_one)
+        celeb_one_data = os.path.join(file_path, celeb_one)
     else:
         celeb_one_data = None
     if celeb_two in files:
@@ -21,8 +23,7 @@ def Get_Image_folders(celeb_one,celeb_two):
     if celeb_one_data or celeb_two_data:
         return celeb_one_data, celeb_two_data
     else:
-        return None,None
-
+        return None, None
 
 
 with open('doppelgangers.csv') as csv_file:
@@ -30,20 +31,19 @@ with open('doppelgangers.csv') as csv_file:
     for row in csv_reader:
         celeb_one = row[0]
         celeb_two = row[1].strip()
-        celeb_one_data, celeb_two_data = Get_Image_folders(celeb_one,celeb_two)
+        celeb_one_data, celeb_two_data = Get_Image_folders(celeb_one, celeb_two)
         if celeb_one_data != None and celeb_two_data != None:
             file_1 = os.listdir(celeb_one_data)
             file_2 = os.listdir(celeb_two_data)
-            with open("Working_doppelganger_list","a") as file:
+            with open("Working_doppelganger_list", "a") as file:
                 to_write = celeb_one + ",-------->, " + celeb_two + "\n"
                 file.write(to_write)
 
         else:
-            with open("None_Numpy","a") as file:
+            with open("None_Numpy", "a") as file:
                 to_write = celeb_one + ",-------->, " + celeb_two + "\n"
                 file.write(to_write)
             continue
-
 
         celeb_data = []
         celeb_labels = []
@@ -88,7 +88,7 @@ with open('doppelgangers.csv') as csv_file:
         print("{}------>{}".format(celeb_one_name, celeb_two_name))
         clf.fit(x_train, y_train)
         score = clf.score(x_test, y_test)
-        with open("Accuracy Output",'a') as file:
+        with open("Accuracy Output", 'a') as file:
             write1 = "{}------>{} \n".format(celeb_one_name, celeb_two_name)
             write2 = " The mean accuracy of this model is: {} \n".format(score)
             file.write(write1)

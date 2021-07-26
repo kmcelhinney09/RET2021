@@ -134,6 +134,9 @@ def main():
             celeb_classifiers[celeb_one_name, celeb_two_name] = clf
 
 
+main()
+
 # Save celeb_classifiers dictionary as a pickle to input into comparison scripts.
 with open("Saved_Classifiers.pkl", 'wb') as f:
     pickle.dump(celeb_classifiers, f)
+

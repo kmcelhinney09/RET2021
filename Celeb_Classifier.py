@@ -4,6 +4,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 import pickle
 import csv
+import joblib
 
 # Try using joblib to save classifers instead of pickle https://mljar.com/blog/save-load-random-forest/
 celeb_classifiers = {}
@@ -97,6 +98,5 @@ with open('doppelgangers.csv') as csv_file:
         celeb_classifiers[celeb_one_name, celeb_two_name] = clf
 
 # print(celeb_classifiers)
-os.chdir('/home/teacheraccount/Documents/RET2021')
-with open("ClassiferPickel", 'wb') as f:
+with open("Saved_Classifiers.pkl", 'wb') as f:
     pickle.dump(celeb_classifiers, f)

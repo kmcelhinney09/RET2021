@@ -4,9 +4,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 import pickle
 import csv
-import joblib
 
-# Try using joblib to save classifers instead of pickle https://mljar.com/blog/save-load-random-forest/
 celeb_classifiers = {}
 
 
@@ -27,7 +25,7 @@ def Get_Image_folders(celeb_one, celeb_two):
         return None, None
 
 
-with open('doppelgangers.csv') as csv_file:
+with open('doppelgangers_list.csv') as csv_file:
     csv_reader = csv.reader(csv_file)
     for row in csv_reader:
         celeb_one = row[0]
@@ -41,7 +39,7 @@ with open('doppelgangers.csv') as csv_file:
                 file.write(to_write)
 
         else:
-            with open("None_Numpy", "a") as file:
+            with open("Pairs_with_no_data", "a") as file:
                 to_write = celeb_one + ",-------->, " + celeb_two + "\n"
                 file.write(to_write)
             continue

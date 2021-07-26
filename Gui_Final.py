@@ -347,7 +347,7 @@ celebdict = {'Abigail Spencer': 'lookslike/abigailspencer.png',
              'constance wu': 'lookslike/constancewu.png',
              'ellen page': 'lookslike/ellenpage.png',
              'emma appleton': 'lookslike/emmaappleton.png'}
-pickle_file = open("ClassiferPickel", 'rb')
+pickle_file = open("Saved_Classifiers.pkl", 'rb')
 classifer_dict = pkl.load(pickle_file)
 pickle_file.close()
 
@@ -410,7 +410,7 @@ def image_compare(input_image, window):
 def celeb_image_match(window, celeb_name_prediction, match_probabilites):
     window['snapshot'].update(filename="snapshot_crop.png")
     window['image'].update(filename=celebdict[celeb_name_prediction])
-    window['celebname'].update(celeb_name_prediction,font='Helvetica 20')
+    window['celebname'].update(celeb_name_prediction,font='gothic 20')
     window['probabilitylist'].update(match_probabilites)
 
 
@@ -418,19 +418,19 @@ def main():
     sg.theme('BrownBlue')
 
     # define the window layout
-    videofeed = [[sg.Text('OpenCV Demo', size=(40, 1), justification='center', font='Helvetica 20')],
+    videofeed = [[sg.Text('UNR RECNT Doppelganger Demo', size=(40, 1), justification='center', font='gothic 20')],
                  [sg.Image(filename='', key='video'), sg.Image(filename='', key='snapshot')],
                  [sg.Button('Snap', size=(10, 1), font='Any 14'),
                   sg.Button('Clear', size=(10,1), font='Any 14'),
                   sg.Button('Exit', size=(10, 1), font='Any 14'), ]]
     message = [
-        [sg.Text('You looklike', size=(20, 1), justification='center', font='Helvetica 20')],
+        [sg.Text('You looklike', size=(20, 1), justification='center', font='gothic 20')],
         [sg.Image(filename='', key='image')],
-        [sg.Text('', key='celebname', size=(30, 1), justification='center', font='Helvetica 20')]
+        [sg.Text('', key='celebname', size=(30, 1), justification='center', font='gothic 20')]
     ]
     #######third colum box
     third = [
-        [sg.Text('Probability', size=(20, 1), justification='center', font='Helvetica 20')],
+        [sg.Text('Probability', size=(20, 1), justification='center', font='gothic 20')],
         [sg.Multiline(default_text='', size=(75, 33), key='probabilitylist')],
 
     ]
@@ -477,7 +477,7 @@ def main():
 
             celeb_name_prediction, match_probabilities = image_compare('snapshot.png', window)
             if celeb_name_prediction == None:
-                window['celebname'].update("Snap must be of a face",font='Helvetica 10')
+                window['celebname'].update("Snap must be of a face",font='gothic 10')
                 window['image'].update(filename='')
             else:
                 celeb_image_match(window, celeb_name_prediction, match_probabilities)

@@ -29,13 +29,13 @@ mtcnn = MTCNN(image_size=160, margin=0, min_face_size=20)
 
 # Uncropped root is the location of the unprocessed input images. The computer expects the images to be in directory
 #      according to the identity which the belong to
-uncropped_root = "./graphing_subset/"
+uncropped_root = "./downloads/"
 
 # Cropped root is the location that you wish to save the cropped images of each identity
-cropped_root = "./cropped_images_subset/"
+cropped_root = "./cropped_images/"
 
 # Pickled root is the location that you wish to save the processed representations of the input images
-numpy_root = "./image_numpy_subset/"
+numpy_root = "./image_numpy/"
 
 # Create directories for output directories if they do not exist
 if not os.path.exists(cropped_root):
@@ -118,6 +118,7 @@ plt.scatter(
     umap_embedding[:, 0],
     umap_embedding[:, 1],
     c=classes)
+
 plt.show()
 
 tsne_embedding = tsne_reducer.fit_transform(representations)
@@ -126,6 +127,7 @@ plt.scatter(
     tsne_embedding[:, 0],
     tsne_embedding[:, 1],
     c=classes)
+
 plt.show()
 
 
@@ -137,6 +139,7 @@ plt.scatter(
     umap_embedding[:, 0],
     umap_embedding[:, 1],
     c=classes)
+
 plt.show()
 
 tsne_embedding = tsne_reducer.fit_transform(images)
@@ -145,5 +148,6 @@ plt.scatter(
     tsne_embedding[:, 0],
     tsne_embedding[:, 1],
     c=classes)
+
 plt.show()
 

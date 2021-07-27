@@ -1,7 +1,6 @@
 import csv
 import os
 import pickle
-
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
@@ -10,7 +9,7 @@ from sklearn.neural_network import MLPClassifier
 The purpose of this script is to take in a series of numpy arrays that are built on the image data of Celebrities that
 have been cropped to the face and had their features extracted using InceptionV1 resnet, and train a series of 
 MLPClassifiers from sklearn based on doppelganger paris from a .csv
-This code was written in a conda environment running Python 3.7.10
+This code was written in a conda environment running Pythuated scripton 3.7.10
 Written by Kevin McElhinney with assistance from Nate Thom
 7/30/21
 '''

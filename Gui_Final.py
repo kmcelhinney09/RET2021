@@ -452,6 +452,7 @@ def main():
                        layout, location=(800, 400), finalize=True)
     window.bind('<s>', 'Snap')
     window.bind('<e>', 'Exit')
+    window.bind('<c>', 'Clear')
 
     recording = False
     cap = cv2.VideoCapture(0)

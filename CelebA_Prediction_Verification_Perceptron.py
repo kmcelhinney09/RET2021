@@ -1,12 +1,10 @@
-import csv
-import os
 import pickle
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import Perceptron
-from sklearn.model_selection import cross_val_score
-from sklearn.tree import DecisionTreeClassifier
-
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+from sklearn.svm import LinearSVC
+from matplotlib import pyplot as plt
 celebA_data_path = 'CelebA_prediction_numpy'
 celebA_labels_path = 'CelebA_predictions_numpy_labels'
 
@@ -26,23 +24,21 @@ x_train, x_test, y_train, y_test = train_test_split(
     random_state=1
 )
 # create an MLPClassifier to put image data through and fit it
-clf = Perceptron(
-    tol=1e-3,
-    random_state=0,
-    early_stopping= True,
-    validation_fraction= .2,
-    verbose=True
-)
+# clf = Perceptron(tol=1e-3, random_state=0, verbose=True)
 
-# tree = DecisionTreeClassifier(random_state=0)
+# clf = DecisionTreeClassifier(random_state=0, max_depth=250)
 
-clf.fit(x_train, y_train)
-# tree.fit(x_train,y_train)
+clf = LinearSVC(random_state=0,tol=1e-5, verbose=True)
 
+clf.fit(x_train, y_train, )
 
 # Find accuracy for output file for later review
 score = clf.score(x_test, y_test)
 print(score)
 
-# tree_score = tree.score(x_test,y_test)
-# print(tree_score)
+# depth = clf.get_depth()
+# print(depth)
+#
+# num_leaves = clf.get_n_leaves()
+# print(num_leaves)
+

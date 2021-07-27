@@ -12,7 +12,7 @@ pickle_file.close()
 celebA_labels_path = 'identity_CelebA.txt'
 celebA_numpies_path = 'img_align_celeba_numpy'
 
-celebA_sample_size = 30000
+celebA_sample_size = 20000
 celeba_numpies = os.listdir(celebA_numpies_path)[:celebA_sample_size]
 celebA_predictions = []
 celebA_predictions_labels = []

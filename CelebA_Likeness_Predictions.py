@@ -49,7 +49,7 @@ with open(labels_path, 'r') as labels_file:
             numpy_path = os.path.join(celebA_numpies_path, numpy_file_name)
             celebA_numpy = np.load(numpy_path)
             # print(celebA_numpy.shape)
-            celebA_numpy = celebA_numpy.reshape(1, -1)
+            # celebA_numpy = celebA_numpy.reshape(1, -1)
             # print(celebA_numpy.shape)
 
             # this is the part that runs the numpy from CelebA through the doppelganger classifiers

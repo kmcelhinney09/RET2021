@@ -78,10 +78,10 @@ for index, identity in enumerate(identities_list):
         image = Image.open(uncropped_root+identity+'/'+file)
 
         # Crop the uncropped image and save the file
-        image_cropped = mtcnn(image, save_path=cropped_root + identity + '/' + file)
+        # image_cropped = mtcnn(image, save_path=cropped_root + identity + '/' + file)
 
         # Alternatively crop the image without saving the file        
-        # image_cropped = mtcnn(image)
+        image_cropped = mtcnn(image)
         if image_cropped == None:
             continue
 
@@ -103,7 +103,7 @@ for index, identity in enumerate(identities_list):
         # # Append a flattened version of the cropped input image for plotting
         # images.append(np.array(image_cropped).flatten())
 
-    identity_df = pd.DataFrame(identity_dict[identity])
+    # identity_df = pd.DataFrame(identity_dict[identity])
 
 #
 # representations = np.array(representations)

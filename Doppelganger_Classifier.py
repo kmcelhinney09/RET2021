@@ -36,10 +36,9 @@ def get_image_folders(celeb_one, celeb_two):
         celeb_two_data = os.path.join(file_path, celeb_two)
     else:
         celeb_two_data = None
-    if celeb_one_data and celeb_two_data:
-        return celeb_one_data, celeb_two_data
-    else:
-        return None, None
+
+    return celeb_one_data, celeb_two_data
+
 
 
 '''
@@ -60,6 +59,7 @@ def main():
             celeb_one = row[0]
             celeb_two = row[1].strip()
             celeb_one_data, celeb_two_data = get_image_folders(celeb_one, celeb_two)
+            # print(celeb_one_data, celeb_two_data)
             if celeb_one_data is not None and celeb_two_data is not None:
                 file_1 = os.listdir(celeb_one_data)
                 file_2 = os.listdir(celeb_two_data)
@@ -98,7 +98,6 @@ def main():
             # These two lines converts the list of arrays into numpy arrays to go through the classifier
             np_celeb_data = np.asarray(celeb_data)
             np_celeb_labels = np.asarray(celeb_labels)
-
             # Build a train and test split from the given data to put through the classifier taking 20% to test
             x_train, x_test, y_train, y_test = train_test_split(
                 np_celeb_data,
@@ -138,4 +137,5 @@ main()
 # Save celeb_classifiers dictionary as a pickle to input into comparison scripts.
 with open("Saved_Classifiers.pkl", 'wb') as f:
     pickle.dump(celeb_classifiers, f)
+print("Pickle Saved!")
 

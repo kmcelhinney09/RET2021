@@ -34,9 +34,9 @@ Each script is executed from the  IDE
 
 ## Authors
 
-Kevin McElhinney
-Michael Dambach
-Amy White
+Kevin McElhinney,
+Michael Dambach,
+Amy White,
 Nate Thom
 
 ## Version History

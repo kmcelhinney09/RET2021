@@ -29,13 +29,13 @@ mtcnn = MTCNN(image_size=160, margin=0, min_face_size=20)
 
 # Uncropped root is the location of the unprocessed input images. The computer expects the images to be in directory
 #      according to the identity which the belong to
-uncropped_root = "./downloads/"
+uncropped_root = "./lfw/"
 
 # Cropped root is the location that you wish to save the cropped images of each identity
-cropped_root = "./cropped_images/"
+cropped_root = "./cropped_images_lfw/"
 
 # Pickled root is the location that you wish to save the processed representations of the input images
-numpy_root = "./image_numpy/"
+numpy_root = "./image_numpy_lfw/"
 
 # Create directories for output directories if they do not exist
 if not os.path.exists(cropped_root):
@@ -94,60 +94,61 @@ for index, identity in enumerate(identities_list):
         # Save the numpy array of the learned representation
         np.save(numpy_root + identity + '/' + file, image_representation_flat, allow_pickle=True)
 
-        # Append the representation for plotting
-        representations.append(image_representation_flat.tolist())
-
-        # Append the "class" or identity label for plotting
-        classes.append(index)
-
-        # Append a flattened version of the cropped input image for plotting
-        images.append(np.array(image_cropped).flatten())
+        # # Append the representation for plotting
+        # representations.append(image_representation_flat.tolist())
+        #
+        # # Append the "class" or identity label for plotting
+        # classes.append(index)
+        #
+        # # Append a flattened version of the cropped input image for plotting
+        # images.append(np.array(image_cropped).flatten())
 
     identity_df = pd.DataFrame(identity_dict[identity])
 
-representations = np.array(representations)
-classes = np.array(classes)
-
-# Initialize umap and tsne
-umap_reducer = umap.UMAP()
-tsne_reducer = TSNE()
-
-umap_embedding = umap_reducer.fit_transform(representations)
-
-plt.scatter(
-    umap_embedding[:, 0],
-    umap_embedding[:, 1],
-    c=classes)
-
-plt.show()
-
-tsne_embedding = tsne_reducer.fit_transform(representations)
-
-plt.scatter(
-    tsne_embedding[:, 0],
-    tsne_embedding[:, 1],
-    c=classes)
-
-plt.show()
-
-
-#####
-
-umap_embedding = umap_reducer.fit_transform(images)
-
-plt.scatter(
-    umap_embedding[:, 0],
-    umap_embedding[:, 1],
-    c=classes)
-
-plt.show()
-
-tsne_embedding = tsne_reducer.fit_transform(images)
-
-plt.scatter(
-    tsne_embedding[:, 0],
-    tsne_embedding[:, 1],
-    c=classes)
-
-plt.show()
-
+#
+# representations = np.array(representations)
+# classes = np.array(classes)
+#
+# # Initialize umap and tsne
+# umap_reducer = umap.UMAP()
+# tsne_reducer = TSNE()
+#
+# umap_embedding = umap_reducer.fit_transform(representations)
+#
+# plt.scatter(
+#     umap_embedding[:, 0],
+#     umap_embedding[:, 1],
+#     c=classes)
+#
+# plt.show()
+#
+# tsne_embedding = tsne_reducer.fit_transform(representations)
+#
+# plt.scatter(
+#     tsne_embedding[:, 0],
+#     tsne_embedding[:, 1],
+#     c=classes)
+#
+# plt.show()
+#
+#
+# #####
+#
+# umap_embedding = umap_reducer.fit_transform(images)
+#
+# plt.scatter(
+#     umap_embedding[:, 0],
+#     umap_embedding[:, 1],
+#     c=classes)
+#
+# plt.show()
+#
+# tsne_embedding = tsne_reducer.fit_transform(images)
+#
+# plt.scatter(
+#     tsne_embedding[:, 0],
+#     tsne_embedding[:, 1],
+#     c=classes)
+#
+# plt.show()
+#

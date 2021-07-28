@@ -14,13 +14,14 @@ celebA_numpies_path = 'img_align_celeba_numpy'
 
 
 ##############################################################
-sample_size = 500  # change this number to slice out different portions of your given data sel
+sample_size = 5 # change this number to slice out different portions of your given data sel
 ##############################################################
 
 
 # create a list of a slice image numbys to iterate over and bring in
-image_numpys_data = sorted(os.listdir(celebA_numpies_path))
-image_numpys = image_numpys_data[:sample_size]
+# image_numpys_data = sorted(os.listdir(celebA_numpies_path))
+# image_numpys = image_numpys_data[:sample_size]
+image_numpys = sorted(os.listdir(celebA_numpies_path))
 
 # empty lists for the resulting predictions made using the doppelganger classifiers and associated labels
 image_predictions = []
@@ -32,9 +33,10 @@ Import the numpys of that label, run it through the doppelganger classifiers and
 celebA_predictions list, and the file label to the celebA_predictions_labels list
 '''
 with open(labels_path, 'r') as labels_file:
-    lines_read = labels_file.readlines()
-    label_lines = sorted(lines_read[:sample_size])
-    print(label_lines)
+    # lines_read = labels_file.readlines()
+    # label_lines = sorted(lines_read[:sample_size])
+    label_lines = sorted(labels_file.readlines())
+
     # this will iterate over each filename/label pair split it and loads the numpy of that file name
     for line in tqdm(label_lines):
         celeba_line = line.split()
@@ -55,8 +57,10 @@ with open(labels_path, 'r') as labels_file:
                 probability = each_classifier.predict_proba(celebA_numpy)
                 image_match_probability.append(probability[0][1])
                 # print(name, len(image_match_probability))
-                image_predictions.append(image_match_probability)
-                image_predictions_labels.append(label)
+            image_predictions.append(image_match_probability)
+            image_predictions_labels.append(label)
+# for each in image_predictions:
+#     print(len(each))
 
 # Here we will try to convert our lists of predictions into numpy arrays and then pickle them
 try:

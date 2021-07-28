@@ -9,18 +9,25 @@ Using the perceptron algorithm, identify celbretity doppelgangers an then identi
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+PySimpleGUI
+cv2
+facenet_pytorch
+PIL
+operator
+pickle
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+import PySimpleGUI as sg
+import cv2
+from facenet_pytorch import MTCNN, InceptionResnetV1
+from PIL import Image
+from operator import itemgetter
+import pickle as pkl
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+Run Gui_Final.py
 ```
 code blocks for commands
 ```

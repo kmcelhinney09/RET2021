@@ -3,7 +3,7 @@ This is work done by the Biometrics group for the  Research Experience For Teach
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Using the perceptron algorithm, identify celbretity doppelgangers an then identify a subject and compare the likeness probability of celebrities in the trained model.
 
 ## Getting Started
 
@@ -33,8 +33,6 @@ command to run if program contains helper info
 ```
 
 ## Authors
-
-Contributors names and contact info
 
 Kevin McElhinney
 Michael Dambach

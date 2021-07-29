@@ -8,7 +8,7 @@ pickle_file = open("Saved_Classifiers.pkl", 'rb')
 classifier_dict = pkl.load(pickle_file)
 pickle_file.close()
 
-sample_size = 10000
+sample_size = 5
 image_numpies_path = 'image_numpy_lfw'
 
 # Empty list to collect all predictions for data set and labels for the predictions
@@ -29,10 +29,11 @@ folders = sorted(os.listdir(image_numpies_path))
 # and add to prediction list
 
 for folder in tqdm(folders):
-    image_match_probability = []
+
     image_file_path = os.path.join(image_numpies_path, folder)
     image_file_list = sorted(os.listdir(image_file_path))
     for file_name in image_file_list:
+        image_match_probability = []
         image_data_path = os.path.join(image_file_path,file_name)
         image_data = np.load(image_data_path)
         image_data = image_data.reshape(1,-1)
@@ -43,8 +44,6 @@ for folder in tqdm(folders):
             image_match_probability.append(probability[0][1])
         image_predictions.append(image_match_probability)
         image_predictions_labels.append(folder)
-# for each in image_predictions:
-#     print(len(each))
 
 
 try:
@@ -55,10 +54,10 @@ try:
     print(predictions_labels_numpy.shape)
 
     with open('LFW_prediction_numpy', 'wb') as data_file:
-        pkl.dump(image_predictions, data_file)
+        pkl.dump(predictions_numpy, data_file)
 
     with open('LFW_predictions_numpy_labels', 'wb') as label_file:
-        pkl.dump(image_predictions_labels, label_file)
+        pkl.dump(predictions_labels_numpy, label_file)
 
 finally:
     print('Done')

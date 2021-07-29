@@ -14,7 +14,7 @@ celebA_numpies_path = 'img_align_celeba_numpy'
 
 
 ##############################################################
-sample_size = 5 # change this number to slice out different portions of your given data sel
+sample_size = 10000 # change this number to slice out different portions of your given data sel
 ##############################################################
 
 
@@ -39,18 +39,17 @@ with open(labels_path, 'r') as labels_file:
 
     # this will iterate over each filename/label pair split it and loads the numpy of that file name
     for line in tqdm(label_lines):
-        celeba_line = line.split()
-        file = celeba_line[0]
-        label = int(celeba_line[1])
+        celebA_line = line.split()
+        file = celebA_line[0]
+        label = int(celebA_line[1])
         numpy_file_name = file + ".npy"
 
         if numpy_file_name in image_numpys:  # double check that the file we want to load is actually in the directory
             image_match_probability = []
             numpy_path = os.path.join(celebA_numpies_path, numpy_file_name)
             celebA_numpy = np.load(numpy_path)
-            # print(celebA_numpy.shape)
-            # celebA_numpy = celebA_numpy.reshape(1, -1)
-            # print(celebA_numpy.shape)
+            celebA_numpy = celebA_numpy.reshape(1, -1)
+
 
             # this is the part that runs the numpy from CelebA through the doppelganger classifiers
             for name, each_classifier in classifier_dict.items():
@@ -59,8 +58,6 @@ with open(labels_path, 'r') as labels_file:
                 # print(name, len(image_match_probability))
             image_predictions.append(image_match_probability)
             image_predictions_labels.append(label)
-# for each in image_predictions:
-#     print(len(each))
 
 # Here we will try to convert our lists of predictions into numpy arrays and then pickle them
 try:

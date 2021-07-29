@@ -24,11 +24,11 @@ x_train, x_test, y_train, y_test = train_test_split(
     random_state=1
 )
 # create an MLPClassifier to put image data through and fit it
-# clf = Perceptron(tol=1e-3, random_state=0, verbose=True)
+clf = Perceptron(tol=1e-3, random_state=0, verbose=True)
 
 # clf = DecisionTreeClassifier(random_state=0, max_depth=250)
 
-clf = LinearSVC(random_state=0,tol=1e-5, verbose=True)
+# clf = LinearSVC(random_state=0,tol=1e-5, verbose=True)
 
 clf.fit(x_train, y_train, )
 

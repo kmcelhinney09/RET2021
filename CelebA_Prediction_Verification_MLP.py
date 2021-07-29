@@ -11,8 +11,8 @@ with open(celebA_data_path, 'rb') as data:
 with open(celebA_labels_path, 'rb') as labels:
     celebA_labels = pickle.load(labels)
 
-print(celebA_data.shape)
-print(celebA_labels.shape)
+# print(celebA_data.shape)
+# print(celebA_labels.shape)
 
 x_train, x_test, y_train, y_test = train_test_split(
     celebA_data,
@@ -25,9 +25,9 @@ clf = MLPClassifier(solver='sgd',
                     activation='relu',
                     alpha=1,
                     hidden_layer_sizes=(512, 512),
-                    early_stopping=True,
-                    tol=1e-5,
-                    validation_fraction=.2,
+                    # early_stopping=True,
+                    # tol=1e-5,
+                    # validation_fraction=.2,
                     verbose=True
                     )
 

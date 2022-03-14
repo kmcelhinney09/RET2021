@@ -1,0 +1,8 @@
+# Data Options
+dataset_dir: "/home/nthom/Documents/datasets/CelebA/"
+identity_labels: "Anno/identity_CelebA.csv"
+attribute_labels: "Anno/list_attr_celeba.txt"
+
+# Preprocessing Options
+preproc_save_path: "./preprocessed_data/"
+under_rep_threshold: 10
